@@ -312,7 +312,12 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
   .hero-inner{flex-direction:column;text-align:center;}
   .hero-contact{justify-content:center;}
   .exp-date-inline{display:block;margin-top:2px;}
-  .pills{flex-direction:row;flex-wrap:wrap;justify-content:center;}
+  .venture-desc{text-align:left;}
+  .cta-buttons{gap:8px;}
+  .cta-buttons a{font-size:13px;padding:12px 16px;}
+  .pills{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .pills .pill{text-align:center;}
+  .pills .pill:last-child{grid-column:1 / -1;justify-self:center;}
   .hero-p{text-align:center;}
   .footer-inner{flex-direction:column;align-items:center;text-align:center;}
   .footer-accent{margin:0 auto 10px;}
