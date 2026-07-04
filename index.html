@@ -62,7 +62,7 @@ body{
   color:var(--txt);
   line-height:1.5;
 }
-.container{max-width:1200px;margin:0 auto;padding:0 32px;}
+.container{max-width:1400px;margin:0 auto;padding:0 32px;}
 
 /* NAVBAR */
 .navbar{position:sticky;top:0;background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.1);z-index:998;padding:12px 0;}
@@ -286,7 +286,11 @@ body{
 .dash-block{margin-bottom:40px;}
 .dash-desc{font-size:14px;color:var(--txt);line-height:1.6;margin-bottom:20px;text-align:justify;}
 .dash-imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;}
-.dash-imgs img{width:100%;border-radius:10px;border:1px solid var(--bdr);}
+.dash-imgs img{width:100%;border-radius:10px;border:1px solid var(--bdr);cursor:zoom-in;}
+.lightbox-overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:1000;align-items:center;justify-content:center;cursor:zoom-out;}
+.lightbox-overlay.open{display:flex;}
+.lightbox-overlay img{max-width:92%;max-height:92%;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,0.5);cursor:default;}
+.lightbox-close{position:absolute;top:20px;right:30px;color:#fff;font-size:36px;cursor:pointer;line-height:1;}
 .dash-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
 
 /* FOOTER */
@@ -298,7 +302,7 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
 .footer-contact{text-align:right;font-size:13px;}
 .footer-contact a{color:var(--blue);text-decoration:none;}
 
-.float-whatsapp{position:fixed;bottom:24px;right:24px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,0.3);z-index:999;transition:transform 0.2s;}
+.float-whatsapp{position:fixed;bottom:40px;right:40px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,0.3);z-index:999;transition:transform 0.2s;}
 .float-whatsapp:hover{transform:scale(1.08);}
 
 @media (max-width:900px){
@@ -524,7 +528,7 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         <div class="client-logo-wrap"><img src="Imagenes/latidos care logo.png" alt="LatidosCare" style="transform:scale(0.75);"></div>
         <div>
         <div class="client-name">LatidosCare</div>
-        <div class="client-cat">Plan Comercial · Go-to-Market <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2025)</span></div>
+        <div class="client-cat">Plan Comercial · Go-to-Market <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2026)</span></div>
         <p class="client-desc">Diseño del plan comercial completo para startup healthtech de manejo de enfermedades crónicas: modelo de comisión progresivo y hoja de ruta de crecimiento.</p>
         </div>
       </div>
@@ -674,13 +678,13 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
 </section>
 <section class="section" id="portafolio">
   <div class="container">
-    <div class="section-label">08 · Dashboard Live</div>
+    <div class="section-label">08 · Proyecto Open Data</div>
     <h2 class="section-title">Educación superior en cifras</h2>
     <div class="dash-block">
       <p class="dash-desc">Dashboard público de datos de educación superior en el Perú, construido sobre 3.7 millones de registros de ingresantes (2022–2025) de fuentes abiertas de SUNEDU y MINEDU. Incluye evolución anual, comparación pública/privada, segmentación por género y categoría, rankings de carreras y universidades, y proyecciones 2026 con regresión lineal.</p>
       <div class="dash-imgs">
-        <img src="Imagenes/Dashboard 1.png" alt="Dashboard Educación Perú BI — vista 1">
-        <img src="Imagenes/Dashboard 2.png" alt="Dashboard Educación Perú BI — vista 2">
+        <img src="Imagenes/Dashboard 1.png" alt="Dashboard Educación Perú BI — vista 1" onclick="openLightbox(this.src)">
+        <img src="Imagenes/Dashboard 2.png" alt="Dashboard Educación Perú BI — vista 2" onclick="openLightbox(this.src)">
       </div>
       <div class="dash-tags">
         <span class="svc-tag">BigQuery</span><span class="svc-tag">Google Apps Script</span><span class="svc-tag">Chart.js</span><span class="svc-tag">Datos abiertos SUNEDU/MINEDU</span>
@@ -692,8 +696,8 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
     <h3 style="font-size:20px;font-weight:700;color:var(--navy);margin-bottom:10px;">Portal del Colaborador — Gato</h3>
     <p class="dash-desc">Aplicación interna desarrollada en Power Apps para la gestión de beneficios, vacaciones, cumpleaños y documentos del colaborador. Flujos de aprobación automatizados en Power Automate con notificaciones por correo y actualización de registros en tiempo real. Implementado en producción en el tenant corporativo de Gato.</p>
     <div class="dash-imgs">
-      <img src="Imagenes/Power apps.png" alt="Portal del Colaborador — editor Power Apps">
-      <img src="Imagenes/power automate.png" alt="Portal del Colaborador — flujo Power Automate">
+      <img src="Imagenes/Power apps.png" alt="Portal del Colaborador — editor Power Apps" onclick="openLightbox(this.src)">
+      <img src="Imagenes/power automate.png" alt="Portal del Colaborador — flujo Power Automate" onclick="openLightbox(this.src)">
     </div>
     <div class="dash-tags">
       <span class="svc-tag">Power Apps</span><span class="svc-tag">Power Automate</span><span class="svc-tag">SharePoint</span><span class="svc-tag">Microsoft 365</span>
@@ -715,7 +719,18 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
     </div>
   </div>
 </footer>
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+  <img id="lightboxImg" src="" onclick="event.stopPropagation()">
+</div>
 <script>
+function openLightbox(src) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
 document.getElementById('navToggle').addEventListener('click', () => {
   document.getElementById('navLinks').classList.toggle('open');
 });
