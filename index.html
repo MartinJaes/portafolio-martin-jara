@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Martín Jara — Consultor en Estrategia, Business Intelligence e IA | Lima, Perú</title>
+<meta name="description" content="Consultor en Estrategia de Negocios, Business Intelligence e Inteligencia Artificial. Ayudo a organizaciones a decidir mejor, ejecutar con mayor eficiencia y sostener su crecimiento.">
+<meta name="keywords" content="Martín Jara, consultor estrategia de negocios, Business Intelligence, Revenue Management, Inteligencia Artificial, transformación digital, Lima Perú">
+<meta name="author" content="Martín Jara">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://portfolio-martin-jara.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Martín Jara — Consultor en Estrategia, Business Intelligence e IA">
+<meta property="og:description" content="Consultor en Estrategia de Negocios, Business Intelligence e Inteligencia Artificial. Ayudo a organizaciones a decidir mejor, ejecutar con mayor eficiencia y sostener su crecimiento.">
+<meta property="og:image" content="https://portfolio-martin-jara.vercel.app/Imagenes/Opengraph.png">
+<meta property="og:image:width" content="1536">
+<meta property="og:image:height" content="1024">
+<meta property="og:image:type" content="image/png">
+<meta property="og:url" content="https://portfolio-martin-jara.vercel.app/">
+<meta property="og:locale" content="es_PE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Martín Jara — Consultor en Estrategia, Business Intelligence e IA">
+<meta name="twitter:description" content="Consultor en Estrategia de Negocios, Business Intelligence e Inteligencia Artificial. Ayudo a organizaciones a decidir mejor, ejecutar con mayor eficiencia y sostener su crecimiento.">
+<meta name="twitter:image" content="https://portfolio-martin-jara.vercel.app/Imagenes/Opengraph.png">
+<link rel="icon" type="image/png" href="Imagenes/LOGO PERSONAL.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Martín Jara",
+  "jobTitle": "Consultor en Estrategia de Negocios, Business Intelligence e Inteligencia Artificial",
+  "url": "https://portfolio-martin-jara.vercel.app/",
+  "email": "mailto:martin.jar.est@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lima",
+    "addressCountry": "PE"
+  },
+  "sameAs": [
+    "https://linkedin.com/in/martin-jara-est"
+  ]
+}
+</script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --navy:#0D2B5E;
+  --coral:#E8604A;
+  --blue:#5BA4CF;
+  --pale:#FDE9E5;
+  --acc:#F0C93A;
+  --txt:#1A1A2E;
+  --mut:#6B7280;
+  --bdr:#DDE6F0;
+}
+html{scroll-behavior:smooth;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:#F2F6FA;
+  color:var(--txt);
+  line-height:1.5;
+}
+.container{max-width:1200px;margin:0 auto;padding:0 32px;}
+
+/* NAVBAR */
+.navbar{position:sticky;top:0;background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.1);z-index:998;padding:12px 0;}
+.navbar-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
+.navbar-logo{height:60px;display:block;}
+.navbar-links{display:flex;gap:20px;flex-wrap:wrap;}
+.navbar-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:13px;font-weight:500;position:relative;padding-bottom:6px;}
+.navbar-links a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--coral);transition:width 0.2s;}
+.navbar-links a:hover::after,.navbar-links a.active::after{width:100%;}
+.navbar-links a:hover,.navbar-links a.active{color:var(--coral);}
+.navbar-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px;}
+.navbar-toggle span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;}
+
+@media (max-width:768px){
+  .navbar-toggle{display:flex;}
+  .navbar-links{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:var(--navy);
+    flex-direction:column;
+    padding:16px 32px 20px;
+    gap:14px;
+    border-top:1px solid rgba(255,255,255,0.1);
+  }
+  .navbar-links.open{display:flex;}
+}
+
+/* HERO */
+.hero{
+  scroll-margin-top:70px;
+  background:linear-gradient(135deg, #0D2B5E 0%, #16407F 55%, #0D2B5E 100%);
+  color:#fff;
+  padding:56px 0;
+  position:relative;
+  overflow:hidden;
+}
+.hero::before{
+  content:'';
+  position:absolute;
+  bottom:-100px;
+  left:-100px;
+  width:320px;
+  height:320px;
+  background:radial-gradient(circle, rgba(232,96,74,0.18) 0%, transparent 70%);
+  border-radius:50%;
+  pointer-events:none;
+}
+.hero::after{
+  content:'';
+  position:absolute;
+  top:-80px;
+  right:-80px;
+  width:260px;
+  height:260px;
+  background:radial-gradient(circle, rgba(91,164,207,0.15) 0%, transparent 70%);
+  border-radius:50%;
+  pointer-events:none;
+}
+.hero-inner{
+  display:flex;
+  gap:40px;
+  align-items:center;
+  position:relative;
+  z-index:1;
+}
+.hero-photo{
+  width:160px;
+  height:160px;
+  border-radius:12px;
+  object-fit:cover;
+  border:2px solid var(--coral);
+  flex-shrink:0;
+}
+.hero-prelabel{
+  color:var(--coral);
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.hero-name{
+  font-size:44px;
+  font-weight:700;
+  letter-spacing:-1px;
+  margin-bottom:16px;
+}
+.pills{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap;}
+.pill{
+  border:1px solid rgba(255,255,255,0.3);
+  border-radius:20px;
+  padding:6px 16px;
+  font-size:13px;
+  font-weight:500;
+}
+.hero-tag{font-size:16px;font-weight:500;margin-bottom:8px;}
+.hero-p{font-size:14px;color:rgba(255,255,255,0.75);text-align:justify;}
+.hero-contact{
+  display:flex;
+  gap:24px;
+  margin-top:28px;
+  padding-top:24px;
+  border-top:1px solid rgba(255,255,255,0.15);
+  font-size:13px;
+  flex-wrap:wrap;
+}
+.hero-contact a{color:var(--blue);text-decoration:none;}
+
+/* EXPERIENCIA */
+.section{padding:28px 0;scroll-margin-top:70px;}
+.section-label{
+  color:var(--coral);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.section-title{
+  font-size:28px;
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:24px;
+  padding-bottom:20px;
+  border-bottom:1px solid var(--bdr);
+}
+.exp-item{
+  display:flex;
+  gap:20px;
+  padding:24px 0;
+  border-bottom:1px solid var(--bdr);
+}
+.exp-item:last-child{border-bottom:none;}
+.exp-logo{
+  width:84px;
+  height:84px;
+  border-radius:8px;
+  border:1px solid var(--bdr);
+  object-fit:contain;
+  padding:8px;
+  background:#fff;
+  flex-shrink:0;
+}
+.exp-date{color:var(--blue);font-size:13px;font-weight:500;margin-bottom:4px;}
+.exp-role{font-size:17px;font-weight:700;color:var(--txt);margin-bottom:2px;}
+.exp-company{font-size:14px;color:var(--mut);margin-bottom:8px;}
+.exp-desc{font-size:14px;color:var(--txt);line-height:1.6;text-align:justify;}
+
+/* FORMACION */
+.study-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px;}
+.study-card{border:1px solid var(--coral);border-radius:10px;padding:18px 20px;background:#fff;display:flex;gap:14px;align-items:flex-start;}
+.study-logo-wrap{width:60px;height:60px;border:1px solid var(--bdr);border-radius:6px;background:#fff;padding:4px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.study-logo-wrap img{width:100%;height:100%;object-fit:contain;}
+.study-title{font-size:15px;font-weight:700;margin-bottom:2px;}
+.study-inst{font-size:13px;color:var(--blue);margin-bottom:4px;}
+.study-date{font-size:12px;color:var(--mut);}
+.badge-curso{display:inline-block;background:var(--acc);color:var(--navy);font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;margin-left:6px;}
+.certs-label{font-size:12px;font-weight:700;letter-spacing:1px;color:var(--txt);text-transform:uppercase;margin-bottom:14px;}
+.certs-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;}
+.cert-row{display:flex;align-items:center;gap:12px;background:var(--pale);border-radius:8px;padding:10px 14px;}
+.cert-logo-wrap{width:36px;height:36px;background:#fff;border-radius:8px;padding:4px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.cert-logo-wrap img{width:100%;height:100%;object-fit:contain;}
+.cert-title{font-size:13px;font-weight:700;color:var(--txt);}
+.cert-issuer{font-size:12px;color:var(--mut);}
+
+/* CONSULTORIA */
+.cards-3{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.client-card{border:1px solid var(--bdr);border-radius:10px;padding:20px;background:#fff;display:flex;gap:16px;align-items:flex-start;}
+.client-logo-wrap{width:88px;height:88px;border-radius:10px;border:1px solid var(--bdr);background:#fff;padding:10px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.client-logo-wrap img{width:100%;height:100%;object-fit:contain;}
+.client-name{font-size:15px;font-weight:700;margin-bottom:2px;}
+.client-cat{font-size:11px;font-weight:700;color:var(--coral);letter-spacing:0.5px;text-transform:uppercase;margin-bottom:8px;}
+.client-date{font-size:12px;color:var(--blue);font-weight:500;margin-bottom:8px;}
+.client-desc{font-size:13px;color:var(--txt);line-height:1.6;text-align:justify;}
+
+/* PROYECTOS PROPIOS */
+.venture-card{border:1px solid var(--coral);border-radius:10px;padding:24px;background:#fff;margin-bottom:16px;}
+.venture-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:20px;}
+.venture-logo-wrap{width:84px;height:84px;border-radius:10px;background:#fff;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.venture-logo-wrap img{width:100%;height:100%;object-fit:contain;}
+.venture-name{font-size:18px;font-weight:700;}
+.venture-link{font-size:12px;color:var(--blue);text-decoration:none;font-weight:600;border:1px solid var(--bdr);border-radius:20px;padding:3px 12px;}
+.venture-tag{font-size:13px;color:var(--coral);font-weight:500;}
+.venture-desc{font-size:14px;color:var(--txt);line-height:1.6;margin-bottom:14px;text-align:justify;}
+.venture-badge{display:inline-block;background:var(--acc);color:var(--navy);font-size:13px;font-weight:700;padding:6px 14px;border-radius:6px;}
+.venture-highlights{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px;}
+.venture-highlight{background:var(--pale);border-radius:6px;padding:8px 12px;font-size:13px;font-weight:600;color:var(--txt);}
+.venture-eyebrow{color:var(--coral);font-size:11px;font-weight:700;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:4px;}
+
+/* DOCENCIA */
+.teach-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;}
+.teach-card{background:var(--pale);border-radius:10px;padding:16px 18px;display:flex;gap:14px;align-items:center;}
+.teach-logo-wrap{width:52px;height:52px;background:#fff;border-radius:8px;padding:4px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.teach-logo-wrap img{width:100%;height:100%;object-fit:contain;}
+.teach-name{font-size:14px;font-weight:700;}
+.teach-inst{font-size:12px;color:var(--mut);}
+.teach-spec{font-size:12px;color:var(--coral);font-weight:500;}
+
+/* SERVICIOS */
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px;}
+.svc-card{border:1px solid var(--bdr);border-radius:10px;padding:20px;}
+.svc-card.pale{background:var(--pale);border-color:var(--coral);}
+.svc-header{display:flex;align-items:baseline;gap:8px;margin-bottom:8px;}
+.svc-num{font-size:11px;font-weight:700;color:var(--coral);}
+.svc-title{font-size:16px;font-weight:700;}
+.svc-desc{font-size:13px;color:var(--txt);line-height:1.6;margin-bottom:12px;text-align:justify;}
+.svc-tags{display:flex;gap:6px;flex-wrap:wrap;}
+.svc-tag{background:#fff;border:1px solid var(--bdr);border-radius:12px;font-size:11px;padding:3px 10px;color:var(--mut);}
+.cta-block{background:linear-gradient(135deg, #0D2B5E 0%, #16407F 60%, #0D2B5E 100%);color:#fff;border-radius:12px;padding:32px;position:relative;overflow:hidden;}
+.cta-block::before{content:'';position:absolute;bottom:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle, rgba(232,96,74,0.18) 0%, transparent 70%);border-radius:50%;pointer-events:none;}
+.cta-title{font-size:20px;font-weight:700;margin-bottom:8px;}
+.cta-sub{font-size:14px;color:rgba(255,255,255,0.7);margin-bottom:20px;}
+.cta-buttons{display:flex;gap:12px;}
+.btn-coral{background:var(--coral);color:#fff;border:none;border-radius:8px;padding:12px 22px;font-size:14px;font-weight:600;text-decoration:none;}
+.btn-outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.4);border-radius:8px;padding:12px 22px;font-size:14px;font-weight:600;text-decoration:none;}
+
+/* DASHBOARD LIVE */
+.dash-block{margin-bottom:40px;}
+.dash-desc{font-size:14px;color:var(--txt);line-height:1.6;margin-bottom:20px;text-align:justify;}
+.dash-imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px;}
+.dash-imgs img{width:100%;border-radius:10px;border:1px solid var(--bdr);}
+.dash-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px;}
+
+/* FOOTER */
+footer{background:linear-gradient(135deg, #0D2B5E 0%, #16407F 60%, #0D2B5E 100%);color:#fff;padding:36px 0;margin-top:40px;border-top:3px solid var(--coral);position:relative;overflow:hidden;}
+footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;height:240px;background:radial-gradient(circle, rgba(232,96,74,0.15) 0%, transparent 70%);border-radius:50%;pointer-events:none;}
+.footer-inner{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;position:relative;z-index:1;}
+.footer-name{font-size:18px;font-weight:700;}
+.footer-sub{font-size:13px;color:rgba(255,255,255,0.6);}
+.footer-contact{text-align:right;font-size:13px;}
+.footer-contact a{color:var(--blue);text-decoration:none;}
+
+.float-whatsapp{position:fixed;bottom:24px;right:24px;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,0.3);z-index:999;transition:transform 0.2s;}
+.float-whatsapp:hover{transform:scale(1.08);}
+
+@media (max-width:900px){
+  .study-grid,.certs-grid,.cards-3,.teach-grid,.svc-grid,.dash-imgs,.venture-highlights{grid-template-columns:1fr;}
+}
+@media (max-width:680px){
+  .hero-inner{flex-direction:column;text-align:center;}
+  .hero-contact{justify-content:center;}
+  .exp-date-inline{display:block;margin-top:2px;}
+  .pills{flex-direction:row;flex-wrap:wrap;justify-content:center;}
+  .hero-p{text-align:center;}
+  .footer-inner{flex-direction:column;align-items:center;text-align:center;}
+  .footer-accent{margin:0 auto 10px;}
+  .footer-contact{text-align:center;}
+  .footer-contact a{display:inline-flex;flex-direction:row-reverse;align-items:center;gap:4px;}
+}
+</style>
+</head>
+<body>
+<a href="https://wa.me/51980005257" target="_blank" class="float-whatsapp" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.79 14.13c-.24.68-1.4 1.31-1.93 1.38-.5.07-1.11.1-1.79-.11-.41-.13-.94-.3-1.62-.6-2.84-1.23-4.7-4.1-4.84-4.29-.14-.19-1.16-1.55-1.16-2.96s.73-2.1.99-2.39c.26-.28.57-.35.76-.35.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.57.81 1.98.88 2.12.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.28.7 1.16 1.51 1.88 1.04.92 1.91 1.21 2.19 1.35.28.14.44.12.61-.07.16-.19.7-.81.88-1.09.19-.28.37-.23.62-.14.26.09 1.63.77 1.91.91.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+</a>
+<nav class="navbar">
+  <div class="container navbar-inner">
+    <img src="Imagenes/logo personal negativo sin fondo.png" alt="Martín Jara" class="navbar-logo">
+    <button class="navbar-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="navbar-links" id="navLinks">
+      <a href="#perfil">Perfil</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#formacion">Formación</a>
+      <a href="#consultoria">Consultoría</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#docencia">Docencia</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portafolio">Portafolio</a>
+    </div>
+  </div>
+</nav>
+<section class="hero" id="perfil">
+  <div class="container hero-inner">
+    <img src="Imagenes/Foto Formal SC.jpg" alt="Martín Jara" class="hero-photo">
+    <div>
+      <div class="hero-prelabel">Consultor Estratégico</div>
+      <h1 class="hero-name">Martín Jara</h1>
+      <div class="pills">
+        <span class="pill">Estrategia de Negocios</span>
+        <span class="pill">Business Intelligence</span>
+        <span class="pill">Revenue Management</span>
+        <span class="pill">Inteligencia Artificial</span>
+        <span class="pill">Transformación Digital</span>
+      </div>
+      <p class="hero-tag">Conecto estrategia, datos e inteligencia artificial para impulsar el crecimiento de las organizaciones.</p>
+      <p class="hero-p">Más que implementar herramientas, ayudo a las organizaciones a desarrollar capacidades para decidir mejor, ejecutar con mayor eficiencia y sostener su crecimiento en el tiempo. Cada iniciativa parte de comprender el contexto, los objetivos y las oportunidades del negocio para diseñar soluciones alineadas con su realidad.</p>
+      <div class="hero-contact">
+        <a href="mailto:martin.jar.est@gmail.com" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>martin.jar.est@gmail.com</a>
+        <a href="https://linkedin.com/in/martin-jara-est" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>linkedin.com/in/martin-jara-est</a>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lima, Perú</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="experiencia">
+  <div class="container">
+    <div class="section-label">02 · Trayectoria</div>
+    <h2 class="section-title">Experiencia laboral reciente</h2>
+
+    <div class="exp-item">
+      <img src="Imagenes/Swiss Holdong Logo.jpg" alt="Swiss Holding AG" class="exp-logo">
+      <div>
+        <div class="exp-role">Jefe de Inteligencia Empresarial</div>
+        <div class="exp-company">Swiss Holding AG S.A.C. · Miraflores, Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Marzo 2026 — Presente)</span></div>
+        <p class="exp-desc">Diseño de la arquitectura de inteligencia de negocios de la holding: modelo de datos consolidado multi-entidad y ecosistema de reportes para 40 usuarios en tres unidades de negocio. Reducción del 90% en costo de infraestructura de reporting e incremento del 80% en velocidad de actualización al migrar a Google Cloud.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <img src="Imagenes/Certus Logo.png" alt="Certus" class="exp-logo">
+      <div>
+        <div class="exp-role">Senior Business Planner</div>
+        <div class="exp-company">Certus · Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Noviembre 2021 — Diciembre 2023)</span></div>
+        <p class="exp-desc">Diseño del modelo de planeación y analítica comercial integrando adquisición, conversión, permanencia y rentabilidad en Power BI. Procesos ETL para consolidar fuentes dispersas y automatizar reportes ejecutivos, con un crecimiento de ventas del 8% YoY y mejora de 1.5 pp en conversión.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <img src="Imagenes/Manpower logo.png" alt="Manpower Perú" class="exp-logo">
+      <div>
+        <div class="exp-role">Coordinador de Inteligencia Comercial</div>
+        <div class="exp-company">Manpower Perú · Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Octubre 2020 — Noviembre 2021)</span></div>
+        <p class="exp-desc">Analítica estratégica y automatización de reportes para cuentas corporativas, con tableros de control en Power BI. Gestión de desempeño comercial y efectividad promocional para la cuenta Nestlé, consolidando información de ejecución en campo para optimizar inversión y estrategia de marketing.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="formacion">
+  <div class="container">
+    <div class="section-label">03 · Formación Académica</div>
+    <h2 class="section-title">Estudios y certificaciones</h2>
+
+    <div class="study-grid">
+      <div class="study-card">
+        <div class="study-logo-wrap"><img src="Imagenes/obs logo.png" alt="OBS Business School" style="transform:scale(1.1);"></div>
+        <div>
+          <div class="study-title">Maestría en Transformación Digital<span class="badge-curso">En curso</span></div>
+          <div class="study-inst">OBS Business School</div>
+          <div class="study-date">Oct 2025 – Jun 2027</div>
+        </div>
+      </div>
+      <div class="study-card">
+        <div class="study-logo-wrap"><img src="Imagenes/pacifico busines school logo.jpg" alt="Universidad del Pacífico" style="transform:scale(1.1);"></div>
+        <div>
+          <div class="study-title">Especialización en Gestión Empresarial</div>
+          <div class="study-inst">Universidad del Pacífico</div>
+          <div class="study-date">Set 2025 – Mar 2026</div>
+        </div>
+      </div>
+      <div class="study-card">
+        <div class="study-logo-wrap"><img src="Imagenes/zegel logo.png" alt="Zegel"></div>
+        <div>
+          <div class="study-title">Bachillerato en Marketing<span class="badge-curso">En curso</span></div>
+          <div class="study-inst">Zegel</div>
+          <div class="study-date">2024 – 2027</div>
+        </div>
+      </div>
+      <div class="study-card">
+        <div class="study-logo-wrap"><img src="Imagenes/universidad de tarapaca logo.png" alt="Universidad de Tarapacá"></div>
+        <div>
+          <div class="study-title">Bachiller en Administración de Empresas</div>
+          <div class="study-inst">Universidad de Tarapacá</div>
+          <div class="study-date">2014 – 2017</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="certs-label">Certificaciones</div>
+    <div class="certs-grid">
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/Google Logo.png" alt="Google" style="transform:scale(1.25);"></div>
+        <div><div class="cert-title">Google Advanced Data Analytics</div><div class="cert-issuer">Google Career Certificates · 2026</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/Google Logo.png" alt="Google" style="transform:scale(1.25);"></div>
+        <div><div class="cert-title">Google AI Professional</div><div class="cert-issuer">Google Career Certificates · 2026</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/Google Logo.png" alt="Google" style="transform:scale(1.25);"></div>
+        <div><div class="cert-title">Google Business Intelligence Professional</div><div class="cert-issuer">Google Career Certificates · 2026</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/pacifico busines school logo.jpg" alt="Universidad del Pacífico" style="transform:scale(1.25);"></div>
+        <div><div class="cert-title">Pricing y Revenue Management</div><div class="cert-issuer">Universidad del Pacífico · 2025</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/pacifico busines school logo.jpg" alt="Universidad del Pacífico" style="transform:scale(1.25);"></div>
+        <div><div class="cert-title">Revenue Hacking</div><div class="cert-issuer">Universidad del Pacífico · 2025</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/idat logo.jpg" alt="IDAT"></div>
+        <div><div class="cert-title">Power BI</div><div class="cert-issuer">IDAT</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/certiprof logo.jpg" alt="Certiprof" style="transform:scale(0.8);"></div>
+        <div><div class="cert-title">5 certificaciones Scrum</div><div class="cert-issuer">Certiprof</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/universidad de alicante.png" alt="Universidad de Alicante" style="transform:scale(1.25);"></div>
+        <div><div class="cert-title">Lean Startup: desarrolla tu modelo de negocio</div><div class="cert-issuer">U. Alicante · UNIMOOC · 2017</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/netzun logo.png" alt="Netzun" style="transform:scale(1.5);"></div>
+        <div><div class="cert-title">Especialización en Transformación Digital</div><div class="cert-issuer">Netzun · 2025</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/netzun logo.png" alt="Netzun" style="transform:scale(1.5);"></div>
+        <div><div class="cert-title">Especialización en Emprendimiento</div><div class="cert-issuer">Netzun · 2025</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/netzun logo.png" alt="Netzun" style="transform:scale(1.5);"></div>
+        <div><div class="cert-title">Especialización en Marketing Digital</div><div class="cert-issuer">Netzun · 2025</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/toulouse.jpg" alt="Toulouse Lautrec" style="transform:scale(1.2);"></div>
+        <div><div class="cert-title">Diplomado en Machine Learning y Ciencia de Datos</div><div class="cert-issuer">Toulouse Lautrec</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="consultoria">
+  <div class="container">
+    <div class="section-label">04 · Consultoría Independiente</div>
+    <h2 class="section-title">Clientes & proyectos</h2>
+    <div class="cards-3">
+      <div class="client-card">
+        <div class="client-logo-wrap"><img src="Imagenes/gador logo.jpg" alt="Gador Perú" style="transform:scale(1.2);"></div>
+        <div>
+        <div class="client-name">Gador Perú</div>
+        <div class="client-cat">BI & Datos <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(Jun 2026 – Actualidad)</span></div>
+        <p class="client-desc">Diseño de procesos ETL para consolidar y automatizar fuentes de datos comerciales sobre Google Workspace, migrando la infraestructura de reporting a Google Cloud.</p>
+        </div>
+      </div>
+      <div class="client-card">
+        <div class="client-logo-wrap"><img src="Imagenes/la tarumba logo.png" alt="La Tarumba"></div>
+        <div>
+        <div class="client-name">La Tarumba</div>
+        <div class="client-cat">Revenue Management · BI <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(Abr 2025 – Jun 2026)</span></div>
+        <p class="client-desc">Diseño del modelo integral de revenue management: pricing dinámico, segmentación por función y monetización de zonas premium, con infraestructura analítica propia en Power BI.</p>
+        </div>
+      </div>
+      <div class="client-card">
+        <div class="client-logo-wrap" style="padding:2px;"><img src="Imagenes/universidad politecnica logo.png" alt="Universidad Politécnica del Perú" style="transform:scale(1.2);"></div>
+        <div>
+        <div class="client-name">Universidad Politécnica del Perú</div>
+        <div class="client-cat">Big Data & Analytics <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(Jun – Nov 2025)</span></div>
+        <p class="client-desc">Limpieza y estructuración de data para estudios de mercado institucionales, mapeo de procesos y diseño del modelo de priorización para implementación de CRM.</p>
+        </div>
+      </div>
+      <div class="client-card">
+        <div class="client-logo-wrap"><img src="Imagenes/latidos care logo.png" alt="LatidosCare" style="transform:scale(0.75);"></div>
+        <div>
+        <div class="client-name">LatidosCare</div>
+        <div class="client-cat">Plan Comercial · Go-to-Market <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2025)</span></div>
+        <p class="client-desc">Diseño del plan comercial completo para startup healthtech de manejo de enfermedades crónicas: modelo de comisión progresivo y hoja de ruta de crecimiento.</p>
+        </div>
+      </div>
+      <div class="client-card">
+        <div class="client-logo-wrap"><img src="Imagenes/inversiones el pino sin marco.jpg" alt="Inversiones el Pino"></div>
+        <div>
+        <div class="client-name">Inversiones el Pino</div>
+        <div class="client-cat">Transformación Digital <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2025)</span></div>
+        <p class="client-desc">Planificación del desarrollo de una intranet de gestión de contratos: levantamiento de requerimientos, diseño de arquitectura y hoja de ruta de implementación.</p>
+        </div>
+      </div>
+      <div class="client-card">
+        <div class="client-logo-wrap"><img src="Imagenes/logo rico final.png" alt="Rico Alimentos"></div>
+        <div>
+        <div class="client-name">Rico Alimentos</div>
+        <div class="client-cat">Planificación Comercial <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2021)</span></div>
+        <p class="client-desc">Elaboración del plan de ventas 2021 para Lima: proyección por canal, definición de cuotas por zona y estructura de seguimiento para la fuerza comercial.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="proyectos">
+  <div class="container">
+    <div class="section-label">05 · Proyectos Empresariales</div>
+    <h2 class="section-title">Empresas y Productos Propios</h2>
+    <div class="venture-card">
+      <div class="venture-header">
+        <div class="venture-logo-wrap"><img src="Imagenes/agencia gato logo.jpg" alt="Agencia GATO"></div>
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+            <div class="venture-name">Agencia GATO</div>
+            <a href="https://gato.pe/" target="_blank" class="venture-link">Visitar sitio →</a>
+          </div>
+          <div class="venture-tag" style="margin-bottom:8px;">Consultora de desarrollo web, software y soluciones digitales</div>
+          <p class="venture-desc">Empresa especializada en desarrollar soluciones digitales para organizaciones que buscan fortalecer su presencia, optimizar sus procesos y acelerar su crecimiento. Integra consultoría, desarrollo de software, diseño web, branding y marketing digital bajo un enfoque orientado a resultados.</p>
+          <div class="venture-highlights" style="margin-top:14px;">
+            <div class="venture-highlight">🏢 250+ proyectos ejecutados</div>
+            <div class="venture-highlight">🤝 200+ organizaciones atendidas</div>
+            <div class="venture-highlight">👥 Equipo de 25 colaboradores</div>
+            <div class="venture-highlight">💰 ARR consolidado S/ 600,000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="venture-card">
+      <div class="venture-header">
+        <div class="venture-logo-wrap" style="border:2px solid var(--blue);padding:6px;"><img src="Imagenes/contigo logo.svg" alt="Contigo ERP"></div>
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+            <div class="venture-name">Contigo</div>
+            <a href="https://contigo.com.pe/" target="_blank" class="venture-link">Visitar sitio →</a>
+          </div>
+          <div class="venture-tag" style="margin-bottom:8px;">Software financiero para empresas que quieren tener las cuentas claras</div>
+          <p class="venture-desc">Creado para simplificar la administración financiera de las pymes mediante una experiencia simple e intuitiva. Reúne en un solo lugar la información clave del negocio para facilitar el control, la organización y la toma de decisiones diarias.</p>
+          <div class="venture-highlights" style="margin-top:14px;">
+            <div class="venture-highlight">🚀 Ganador Startup Perú 11G</div>
+            <div class="venture-highlight">💰 Financiamiento ProInnóvate S/ 67,000</div>
+            <div class="venture-highlight">🏢 50+ empresas usuarias</div>
+            <div class="venture-highlight">☁️ Plataforma SaaS en operación</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="docencia">
+  <div class="container">
+    <div class="section-label">06 · Docencia & Facilitación</div>
+    <h2 class="section-title">Programas universitarios y ecosistemas</h2>
+    <div class="teach-grid">
+      <div class="teach-card">
+        <div class="teach-logo-wrap" style="background:none;padding:0;"><img src="Imagenes/idealab logo.jpg" alt="IdeaLab"></div>
+        <div><div class="teach-name">IdeaLab Innovation Hub</div><div class="teach-inst">ProInnóvate · Cusco</div><div class="teach-spec">Facilitador en Aceleración e Incubación</div></div>
+      </div>
+      <div class="teach-card">
+        <div class="teach-logo-wrap"><img src="Imagenes/wichay continental logo.png" alt="Universidad Continental" style="transform:scale(1.3);"></div>
+        <div><div class="teach-name">PeakUP</div><div class="teach-inst">Universidad Continental</div><div class="teach-spec">Lean Startup · BMC · Estrategia</div></div>
+      </div>
+      <div class="teach-card">
+        <div class="teach-logo-wrap"><img src="Imagenes/utp.jpg" alt="UTP"></div>
+        <div><div class="teach-name">StartUTP</div><div class="teach-inst">Universidad Tecnológica del Perú</div><div class="teach-spec">Scrum · Scope Canvas · Validación</div></div>
+      </div>
+      <div class="teach-card">
+        <div class="teach-logo-wrap"><img src="Imagenes/innova u lima logo.png" alt="Innova ULima"></div>
+        <div><div class="teach-name">Innova ULima</div><div class="teach-inst">Universidad de Lima</div><div class="teach-spec">Design Thinking · Innovación</div></div>
+      </div>
+      <div class="teach-card">
+        <div class="teach-logo-wrap"><img src="Imagenes/hult prize logo.png" alt="Hult Prize"></div>
+        <div><div class="teach-name">Hult Prize</div><div class="teach-inst">Universidad Privada del Norte</div><div class="teach-spec">Emprendimiento social · Pitching</div></div>
+      </div>
+      <div class="teach-card">
+        <div class="teach-logo-wrap"><img src="Imagenes/wichay continental logo.png" alt="Universidad Continental" style="transform:scale(1.3);"></div>
+        <div><div class="teach-name">Wichay</div><div class="teach-inst">Universidad Continental</div><div class="teach-spec">Estrategia Comercial · Go-to-Market</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="servicios">
+  <div class="container">
+    <div class="section-label">07 · Áreas de Especialización</div>
+    <h2 class="section-title">¿Cómo puedo generar valor?</h2>
+    <p style="font-size:14px;color:var(--mut);margin-bottom:24px;text-align:justify;">Cada organización enfrenta desafíos distintos. Mi trabajo consiste en conectar estrategia, datos, inteligencia artificial y tecnología para diseñar soluciones que impulsen el crecimiento, mejoren la toma de decisiones y generen resultados medibles.</p>
+    <div class="svc-grid">
+      <div class="svc-card pale">
+        <div class="svc-header"><span class="svc-num">01</span><span class="svc-title">Business Strategy & Growth</span></div>
+        <p class="svc-desc">Diseño estrategias de negocio orientadas al crecimiento sostenible, alineando objetivos, procesos, personas y tecnología para fortalecer la competitividad y acelerar la ejecución.</p>
+        <div class="svc-tags"><span class="svc-tag">Business Strategy</span><span class="svc-tag">Growth Strategy</span><span class="svc-tag">Business Model</span><span class="svc-tag">Product Strategy</span><span class="svc-tag">OKRs</span></div>
+      </div>
+      <div class="svc-card pale">
+        <div class="svc-header"><span class="svc-num">02</span><span class="svc-title">Business Intelligence & Analytics</span></div>
+        <p class="svc-desc">Transformo datos en información estratégica mediante dashboards ejecutivos, modelos analíticos e integración de múltiples fuentes para acelerar la toma de decisiones.</p>
+        <div class="svc-tags"><span class="svc-tag">Power BI</span><span class="svc-tag">BigQuery</span><span class="svc-tag">SQL</span><span class="svc-tag">Analytics</span><span class="svc-tag">Dashboards</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header"><span class="svc-num">03</span><span class="svc-title">Revenue Management & Pricing</span></div>
+        <p class="svc-desc">Diseño estrategias de pricing, gestión de ingresos y modelos de demanda basados en datos para maximizar rentabilidad, optimizar el desempeño comercial y mejorar la asignación de recursos.</p>
+        <div class="svc-tags"><span class="svc-tag">Revenue Management</span><span class="svc-tag">Pricing</span><span class="svc-tag">Forecasting</span><span class="svc-tag">Elasticidad</span><span class="svc-tag">Ocupabilidad</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header"><span class="svc-num">04</span><span class="svc-title">Inteligencia Artificial & Automatización</span></div>
+        <p class="svc-desc">Implemento soluciones basadas en inteligencia artificial para automatizar procesos, desarrollar asistentes inteligentes e integrar modelos de lenguaje en operaciones reales de negocio.</p>
+        <div class="svc-tags"><span class="svc-tag">IA Generativa</span><span class="svc-tag">Agentes IA</span><span class="svc-tag">LLMs</span><span class="svc-tag">Automatización</span><span class="svc-tag">Copilots</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header"><span class="svc-num">05</span><span class="svc-title">Transformación Digital</span></div>
+        <p class="svc-desc">Lidero iniciativas de transformación digital mediante la optimización de procesos, integración de plataformas e implementación de soluciones tecnológicas con impacto medible.</p>
+        <div class="svc-tags"><span class="svc-tag">Procesos</span><span class="svc-tag">Integraciones</span><span class="svc-tag">Apps Script</span><span class="svc-tag">Power Platform</span><span class="svc-tag">Digitalización</span></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header"><span class="svc-num">06</span><span class="svc-title">Innovación, Startups & Docencia</span></div>
+        <p class="svc-desc">Acompaño organizaciones, universidades y startups en el diseño de nuevos productos, modelos de negocio y programas de innovación, complementando esta experiencia como mentor y docente.</p>
+        <div class="svc-tags"><span class="svc-tag">Lean Startup</span><span class="svc-tag">Startup Perú</span><span class="svc-tag">Mentoría</span><span class="svc-tag">Workshops</span><span class="svc-tag">Product Discovery</span></div>
+      </div>
+    </div>
+    <div class="cta-block">
+      <div class="cta-title">¿Tienes un proyecto en mente?</div>
+      <div class="cta-sub">El primer paso es una conversación de 30 minutos para entender el contexto antes de hablar de soluciones.</div>
+      <div class="cta-buttons">
+        <a href="https://wa.me/51980005257" target="_blank" class="btn-coral">Escribir por WhatsApp</a>
+        <a href="https://calendly.com/martin-jar-est/30min" target="_blank" class="btn-outline">Agendar 30 minutos</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="portafolio">
+  <div class="container">
+    <div class="section-label">08 · Dashboard Live</div>
+    <h2 class="section-title">Educación superior en cifras</h2>
+    <div class="dash-block">
+      <p class="dash-desc">Dashboard público de datos de educación superior en el Perú, construido sobre 3.7 millones de registros de ingresantes (2022–2025) de fuentes abiertas de SUNEDU y MINEDU. Incluye evolución anual, comparación pública/privada, segmentación por género y categoría, rankings de carreras y universidades, y proyecciones 2026 con regresión lineal.</p>
+      <div class="dash-imgs">
+        <img src="Imagenes/Dashboard 1.png" alt="Dashboard Educación Perú BI — vista 1">
+        <img src="Imagenes/Dashboard 2.png" alt="Dashboard Educación Perú BI — vista 2">
+      </div>
+      <div class="dash-tags">
+        <span class="svc-tag">BigQuery</span><span class="svc-tag">Google Apps Script</span><span class="svc-tag">Chart.js</span><span class="svc-tag">Datos abiertos SUNEDU/MINEDU</span>
+      </div>
+      <a href="https://script.google.com/macros/s/AKfycbz4XL6-eVPFl9hpVCQW9BAY1IKWmimh3RGj-xOtRRCoBFw6HwN25DZdUpHEsZzzQ4sw/exec" target="_blank" class="btn-coral" style="display:inline-block;">Ver dashboard en vivo →</a>
+    </div>
+
+    <div class="section-label" style="margin-top:8px;">Ejemplo de trabajo · Power Apps + Power Automate</div>
+    <h3 style="font-size:20px;font-weight:700;color:var(--navy);margin-bottom:10px;">Portal del Colaborador — Gato</h3>
+    <p class="dash-desc">Aplicación interna desarrollada en Power Apps para la gestión de beneficios, vacaciones, cumpleaños y documentos del colaborador. Flujos de aprobación automatizados en Power Automate con notificaciones por correo y actualización de registros en tiempo real. Implementado en producción en el tenant corporativo de Gato.</p>
+    <div class="dash-imgs">
+      <img src="Imagenes/Power apps.png" alt="Portal del Colaborador — editor Power Apps">
+      <img src="Imagenes/power automate.png" alt="Portal del Colaborador — flujo Power Automate">
+    </div>
+    <div class="dash-tags">
+      <span class="svc-tag">Power Apps</span><span class="svc-tag">Power Automate</span><span class="svc-tag">SharePoint</span><span class="svc-tag">Microsoft 365</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-accent" style="width:32px;height:4px;background:var(--coral);border-radius:2px;margin-bottom:10px;"></div>
+      <div class="footer-name">Martín Jara</div>
+      <div class="footer-sub">Consultor Independiente · Estrategia · Datos · Transformación Digital</div>
+    </div>
+    <div class="footer-contact">
+      <div><a href="mailto:martin.jar.est@gmail.com" target="_blank">martin.jar.est@gmail.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-left:2px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a></div>
+      <div><a href="https://linkedin.com/in/martin-jara-est" target="_blank">linkedin.com/in/martin-jara-est <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-left:2px;"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg></a></div>
+      <div>Lima, Perú · 2026</div>
+    </div>
+  </div>
+</footer>
+<script>
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+document.querySelectorAll('.navbar-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+const sections = document.querySelectorAll('section[id], .hero[id]');
+const navLinks = document.querySelectorAll('.navbar-links a');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.getAttribute('id');
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+      });
+    }
+  });
+}, { rootMargin: '-100px 0px -60% 0px' });
+sections.forEach(section => observer.observe(section));
+</script>
+</body>
+</html>
