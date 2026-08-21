@@ -8,36 +8,77 @@
 <meta name="keywords" content="Martín Jara, consultor estrategia de negocios, Business Intelligence, Revenue Management, Inteligencia Artificial, transformación digital, Lima Perú">
 <meta name="author" content="Martín Jara">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://portfolio-martin-jara.vercel.app/">
+<link rel="canonical" href="https://martinjara.work/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Martín Jara — Consultor en Estrategia, Business Intelligence e IA">
 <meta property="og:description" content="Consultor en Estrategia de Negocios, Business Intelligence e Inteligencia Artificial. Ayudo a organizaciones a decidir mejor, ejecutar con mayor eficiencia y sostener su crecimiento.">
-<meta property="og:image" content="https://portfolio-martin-jara.vercel.app/Imagenes/Opengraph.png">
+<meta property="og:image" content="https://martinjara.work/Imagenes/Opengraph.jpg">
 <meta property="og:image:width" content="1536">
 <meta property="og:image:height" content="1024">
-<meta property="og:image:type" content="image/png">
-<meta property="og:url" content="https://portfolio-martin-jara.vercel.app/">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="Martín Jara — Consultor en Estrategia, Business Intelligence e Inteligencia Artificial">
+<meta property="og:url" content="https://martinjara.work/">
+<meta property="og:site_name" content="Martín Jara">
 <meta property="og:locale" content="es_PE">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Martín Jara — Consultor en Estrategia, Business Intelligence e IA">
 <meta name="twitter:description" content="Consultor en Estrategia de Negocios, Business Intelligence e Inteligencia Artificial. Ayudo a organizaciones a decidir mejor, ejecutar con mayor eficiencia y sostener su crecimiento.">
-<meta name="twitter:image" content="https://portfolio-martin-jara.vercel.app/Imagenes/Opengraph.png">
+<meta name="twitter:image" content="https://martinjara.work/Imagenes/Opengraph.jpg">
 <link rel="icon" type="image/png" href="Imagenes/LOGO PERSONAL.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "Martín Jara",
+  "name": "Martín Jara Estrella",
+  "alternateName": "Martín Jara",
   "jobTitle": "Consultor en Estrategia de Negocios, Business Intelligence e Inteligencia Artificial",
-  "url": "https://portfolio-martin-jara.vercel.app/",
+  "description": "Consultor con más de 10 años en estrategia comercial, revenue management, business intelligence y transformación digital. Fundador de GATO y del ERP modular Contigo.",
+  "url": "https://martinjara.work/",
+  "image": "https://martinjara.work/Imagenes/Foto%20Formal%20SC.jpg",
   "email": "mailto:martin.jar.est@gmail.com",
+  "telephone": "+51980005257",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Lima",
+    "addressRegion": "Lima",
     "addressCountry": "PE"
   },
+  "worksFor": [
+    {
+      "@type": "Organization",
+      "name": "Swiss Holding AG",
+      "url": "https://martinjara.work/#experiencia"
+    },
+    {
+      "@type": "Organization",
+      "name": "GATO",
+      "url": "https://gato.pe/"
+    }
+  ],
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "OBS Business School — Universidad de Barcelona"},
+    {"@type": "CollegeOrUniversity", "name": "Universidad del Pacífico"},
+    {"@type": "CollegeOrUniversity", "name": "Universidad de Tarapacá"},
+    {"@type": "EducationalOrganization", "name": "Zegel"}
+  ],
+  "knowsAbout": [
+    "Business Intelligence",
+    "Revenue Management",
+    "Pricing Dinámico",
+    "Transformación Digital",
+    "Inteligencia Artificial Aplicada",
+    "Planificación Comercial",
+    "Arquitectura de Datos",
+    "Automatización Empresarial",
+    "Power BI",
+    "BigQuery",
+    "Product Management"
+  ],
+  "knowsLanguage": ["es", "en"],
   "sameAs": [
-    "https://linkedin.com/in/martin-jara-est"
+    "https://linkedin.com/in/martin-jara-est",
+    "https://gato.pe/",
+    "https://contigo.com.pe/"
   ]
 }
 </script>
@@ -127,17 +168,18 @@ body{
 .hero-inner{
   display:flex;
   gap:40px;
-  align-items:center;
+  align-items:flex-start;
   position:relative;
   z-index:1;
 }
 .hero-photo{
-  width:160px;
-  height:160px;
+  width:170px;
+  height:170px;
   border-radius:12px;
   object-fit:cover;
   border:2px solid var(--coral);
   flex-shrink:0;
+  margin-top:4px;
 }
 .hero-prelabel{
   color:var(--coral);
@@ -163,6 +205,40 @@ body{
 }
 .hero-tag{font-size:16px;font-weight:500;margin-bottom:8px;}
 .hero-p{font-size:14px;color:rgba(255,255,255,0.75);text-align:justify;}
+.hero-stats{
+  display:flex;
+  gap:32px;
+  margin-top:24px;
+  flex-wrap:wrap;
+}
+.hero-stat-num{font-size:26px;font-weight:700;color:var(--coral);line-height:1.1;letter-spacing:-0.5px;}
+.hero-stat-lbl{font-size:11px;font-weight:500;color:rgba(255,255,255,0.6);letter-spacing:0.5px;text-transform:uppercase;margin-top:2px;}
+.hero-cta{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;}
+.btn-hero{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  background:var(--coral);
+  color:#fff;
+  border-radius:8px;
+  padding:11px 20px;
+  font-size:13px;
+  font-weight:600;
+  text-decoration:none;
+}
+.btn-hero-ghost{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  background:transparent;
+  color:#fff;
+  border:1px solid rgba(255,255,255,0.35);
+  border-radius:8px;
+  padding:11px 20px;
+  font-size:13px;
+  font-weight:600;
+  text-decoration:none;
+}
 .hero-contact{
   display:flex;
   gap:24px;
@@ -311,6 +387,8 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
 @media (max-width:680px){
   .hero-inner{flex-direction:column;text-align:center;}
   .hero-contact{justify-content:center;}
+  .hero-stats{justify-content:center;gap:20px 26px;}
+  .hero-cta{justify-content:center;}
   .exp-date-inline{display:block;margin-top:2px;}
   .venture-desc{text-align:left;}
   .cta-buttons{gap:8px;}
@@ -361,8 +439,36 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         <span class="pill">Inteligencia Artificial</span>
         <span class="pill">Transformación Digital</span>
       </div>
-      <p class="hero-tag">Conecto estrategia, datos e inteligencia artificial para impulsar el crecimiento de las organizaciones.</p>
-      <p class="hero-p">Más que implementar herramientas, ayudo a las organizaciones a desarrollar capacidades para decidir mejor, ejecutar con mayor eficiencia y sostener su crecimiento en el tiempo. Cada iniciativa parte de comprender el contexto, los objetivos y las oportunidades del negocio para diseñar soluciones alineadas con su realidad.</p>
+      <p class="hero-tag">Conecto estrategia, datos e inteligencia artificial para que las organizaciones decidan mejor y crezcan de forma sostenible.</p>
+      <p class="hero-p">Más de 10 años traduciendo necesidades del negocio en soluciones con impacto medible: arquitecturas de Business Intelligence, modelos de pricing dinámico y sistemas de forecast que sostienen decisiones reales en entretenimiento, educación, retail y servicios. La inteligencia artificial aplicada —LLMs, automatización y agentes— es un eje central de mi trabajo, no un anexo. Y más que implementar herramientas, ayudo a las organizaciones a desarrollar la capacidad de sostener el cambio.</p>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">+10</div>
+          <div class="hero-stat-lbl">Años de experiencia</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">250+</div>
+          <div class="hero-stat-lbl">Proyectos liderados</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">200+</div>
+          <div class="hero-stat-lbl">Organizaciones atendidas</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">25</div>
+          <div class="hero-stat-lbl">Equipo a cargo</div>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="https://calendly.com/martin-jar-est/30min" target="_blank" class="btn-hero">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Agendar 30 minutos
+        </a>
+        <a href="CV-Martin-Jara.pdf" target="_blank" class="btn-hero-ghost" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5M12 15V3"/></svg>
+          Descargar CV
+        </a>
+      </div>
       <div class="hero-contact">
         <a href="mailto:martin.jar.est@gmail.com" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>martin.jar.est@gmail.com</a>
         <a href="https://linkedin.com/in/martin-jara-est" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>linkedin.com/in/martin-jara-est</a>
@@ -380,9 +486,18 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
     <div class="exp-item">
       <img src="Imagenes/Swiss Holdong Logo.jpg" alt="Swiss Holding AG" class="exp-logo">
       <div>
-        <div class="exp-role">Jefe de Inteligencia Empresarial</div>
+        <div class="exp-role">Jefe de Inteligencia Empresarial y Transformación Digital</div>
         <div class="exp-company">Swiss Holding AG S.A.C. · Miraflores, Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Marzo 2026 — Presente)</span></div>
-        <p class="exp-desc">Diseño de la arquitectura de inteligencia de negocios de la holding: modelo de datos consolidado multi-entidad y ecosistema de reportes para 40 usuarios en tres unidades de negocio. Reducción del 90% en costo de infraestructura de reporting e incremento del 80% en velocidad de actualización al migrar a Google Cloud.</p>
+        <p class="exp-desc">Diseño de la arquitectura de inteligencia de negocios de la holding: modelo de datos consolidado multi-entidad, sistema de comisiones con triple validación y ecosistema de reportes para 40 usuarios en tres unidades de negocio. Reducción del 90% en costo de infraestructura de reporting e incremento del 80% en velocidad de actualización al migrar a Google Cloud. La identificación de oportunidades por unidad, marca y producto contribuyó a un crecimiento de revenue del 8% YoY y a una reducción del 15% en costo operativo.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <img src="Imagenes/agencia gato logo.jpg" alt="GATO" class="exp-logo">
+      <div>
+        <div class="exp-role">Director Fundador</div>
+        <div class="exp-company">GATO · Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Enero 2024 — Presente)</span></div>
+        <p class="exp-desc">Fundación y dirección de una empresa de transformación digital que ejecuta proyectos de software, Business Intelligence y automatización para organizaciones públicas y privadas: más de 250 proyectos para más de 200 organizaciones —Laive, UNACEM, Universidad Norbert Wiener y Pacífico Seguros, entre otras— con un equipo estable de 25 colaboradores. Como Product Owner de Contigo, ERP modular SaaS, lideré la propuesta de valor y el proceso seleccionado por Startup Perú 11G para financiamiento de innovación.</p>
       </div>
     </div>
 
@@ -391,7 +506,7 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
       <div>
         <div class="exp-role">Senior Business Planner</div>
         <div class="exp-company">Certus · Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Noviembre 2021 — Diciembre 2023)</span></div>
-        <p class="exp-desc">Diseño del modelo de planeación y analítica comercial integrando adquisición, conversión, permanencia y rentabilidad en Power BI. Procesos ETL para consolidar fuentes dispersas y automatizar reportes ejecutivos, con un crecimiento de ventas del 8% YoY y mejora de 1.5 pp en conversión.</p>
+        <p class="exp-desc">Diseño del modelo de planeación y analítica comercial integrando adquisición, conversión, permanencia y rentabilidad en Power BI. Procesos ETL para consolidar fuentes dispersas y automatizar reportes ejecutivos, con un crecimiento de ventas del 8% YoY y mejora de 1.5 pp en conversión. Reestructuración del esquema de comisiones y metas, alineándolo a productividad real y rentabilidad por canal.</p>
       </div>
     </div>
 
@@ -400,7 +515,7 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
       <div>
         <div class="exp-role">Coordinador de Inteligencia Comercial</div>
         <div class="exp-company">Manpower Perú · Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Octubre 2020 — Noviembre 2021)</span></div>
-        <p class="exp-desc">Analítica estratégica y automatización de reportes para cuentas corporativas, con tableros de control en Power BI. Gestión de desempeño comercial y efectividad promocional para la cuenta Nestlé, consolidando información de ejecución en campo para optimizar inversión y estrategia de marketing.</p>
+        <p class="exp-desc">Analítica estratégica y automatización de reportes para cuentas corporativas, con tableros de control en Power BI. Diseño e implementación del sistema de reportes corporativos integrando data comercial, operativa y financiera. Gestión de desempeño comercial y efectividad promocional para la cuenta Nestlé, consolidando información de ejecución en campo para optimizar inversión y estrategia de marketing.</p>
       </div>
     </div>
 
@@ -430,9 +545,17 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         </div>
       </div>
       <div class="study-card">
+        <div class="study-logo-wrap"><img src="Imagenes/toulouse.jpg" alt="Toulouse Lautrec" style="transform:scale(1.1);"></div>
+        <div>
+          <div class="study-title">Diplomado en Machine Learning y Ciencia de Datos</div>
+          <div class="study-inst">Toulouse Lautrec</div>
+          <div class="study-date">2022 – 2023</div>
+        </div>
+      </div>
+      <div class="study-card">
         <div class="study-logo-wrap"><img src="Imagenes/zegel logo.png" alt="Zegel"></div>
         <div>
-          <div class="study-title">Bachillerato en Marketing<span class="badge-curso">En curso</span></div>
+          <div class="study-title">Bachillerato en Marketing Estratégico<span class="badge-curso">En curso</span></div>
           <div class="study-inst">Zegel</div>
           <div class="study-date">2024 – 2027</div>
         </div>
@@ -443,6 +566,14 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
           <div class="study-title">Bachiller en Administración de Empresas</div>
           <div class="study-inst">Universidad de Tarapacá</div>
           <div class="study-date">2014 – 2017</div>
+        </div>
+      </div>
+      <div class="study-card">
+        <div class="study-logo-wrap"><img src="Imagenes/isam logo.png" alt="ISAM" style="transform:scale(1.15);"></div>
+        <div>
+          <div class="study-title">Tecnicatura en Desarrollo de Software</div>
+          <div class="study-inst">ISAM</div>
+          <div class="study-date">2024 – 2026</div>
         </div>
       </div>
     </div>
@@ -467,7 +598,7 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
       </div>
       <div class="cert-row">
         <div class="cert-logo-wrap"><img src="Imagenes/pacifico busines school logo.jpg" alt="Universidad del Pacífico" style="transform:scale(1.25);"></div>
-        <div><div class="cert-title">Revenue Hacking</div><div class="cert-issuer">Universidad del Pacífico · 2025</div></div>
+        <div><div class="cert-title">Revenue Growth Hacking</div><div class="cert-issuer">Universidad del Pacífico · 2025</div></div>
       </div>
       <div class="cert-row">
         <div class="cert-logo-wrap"><img src="Imagenes/idat logo.jpg" alt="IDAT"></div>
@@ -475,7 +606,11 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
       </div>
       <div class="cert-row">
         <div class="cert-logo-wrap"><img src="Imagenes/certiprof logo.jpg" alt="Certiprof" style="transform:scale(0.8);"></div>
-        <div><div class="cert-title">5 certificaciones Scrum</div><div class="cert-issuer">Certiprof</div></div>
+        <div><div class="cert-title">Scrum Master Professional Certificate</div><div class="cert-issuer">Certiprof</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/certiprof logo.jpg" alt="Certiprof" style="transform:scale(0.8);"></div>
+        <div><div class="cert-title">Scrum Product Owner Professional Certificate</div><div class="cert-issuer">Certiprof</div></div>
       </div>
       <div class="cert-row">
         <div class="cert-logo-wrap"><img src="Imagenes/universidad de alicante.png" alt="Universidad de Alicante" style="transform:scale(1.25);"></div>
@@ -493,10 +628,6 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         <div class="cert-logo-wrap"><img src="Imagenes/netzun logo.png" alt="Netzun" style="transform:scale(1.5);"></div>
         <div><div class="cert-title">Especialización en Marketing Digital</div><div class="cert-issuer">Netzun · 2025</div></div>
       </div>
-      <div class="cert-row">
-        <div class="cert-logo-wrap"><img src="Imagenes/toulouse.jpg" alt="Toulouse Lautrec" style="transform:scale(1.2);"></div>
-        <div><div class="cert-title">Diplomado en Machine Learning y Ciencia de Datos</div><div class="cert-issuer">Toulouse Lautrec</div></div>
-      </div>
     </div>
   </div>
 </section>
@@ -510,7 +641,7 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         <div>
         <div class="client-name">Gador Perú</div>
         <div class="client-cat">BI & Datos <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(Jun 2026 – Actualidad)</span></div>
-        <p class="client-desc">Diseño de procesos ETL para consolidar y automatizar fuentes de datos comerciales sobre Google Workspace, migrando la infraestructura de reporting a Google Cloud.</p>
+        <p class="client-desc">Diseño de procesos ETL para consolidar y automatizar fuentes de datos comerciales sobre Google Workspace. La migración a infraestructura Google redujo un 80% el costo de plataformas sin pérdida de funcionalidad, con foco en la adopción por usuarios no técnicos.</p>
         </div>
       </div>
       <div class="client-card">
@@ -518,7 +649,7 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         <div>
         <div class="client-name">La Tarumba</div>
         <div class="client-cat">Revenue Management · BI <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(Abr 2025 – Jun 2026)</span></div>
-        <p class="client-desc">Diseño del modelo integral de revenue management: pricing dinámico, segmentación por función y monetización de zonas premium, con infraestructura analítica propia en Power BI.</p>
+        <p class="client-desc">Diseño del modelo integral de revenue management: pricing dinámico, segmentación por función y monetización de zonas premium. El revenue creció 3.5% YoY pese a una reducción en ocupación, con infraestructura analítica propia —integraciones DB/API, cubo OLAP y tableros en Power BI— y 90% menos tiempo en generación de reportes.</p>
         </div>
       </div>
       <div class="client-card">
@@ -526,15 +657,7 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         <div>
         <div class="client-name">Universidad Politécnica del Perú</div>
         <div class="client-cat">Big Data & Analytics <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(Jun – Nov 2025)</span></div>
-        <p class="client-desc">Limpieza y estructuración de data para estudios de mercado institucionales, mapeo de procesos y diseño del modelo de priorización para implementación de CRM.</p>
-        </div>
-      </div>
-      <div class="client-card">
-        <div class="client-logo-wrap"><img src="Imagenes/latidos care logo.png" alt="LatidosCare" style="transform:scale(0.75);"></div>
-        <div>
-        <div class="client-name">LatidosCare</div>
-        <div class="client-cat">Plan Comercial · Go-to-Market <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2026)</span></div>
-        <p class="client-desc">Diseño del plan comercial completo para startup healthtech de manejo de enfermedades crónicas: modelo de comisión progresivo y hoja de ruta de crecimiento.</p>
+        <p class="client-desc">Limpieza y estructuración de data para estudios de mercado institucionales, diseño del modelo de planeamiento de metas comerciales y mapeo de procesos para la implementación del CRM, incluyendo un modelo de priorización de leads por semaforización.</p>
         </div>
       </div>
       <div class="client-card">
@@ -551,6 +674,14 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         <div class="client-name">Rico Alimentos</div>
         <div class="client-cat">Planificación Comercial <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2021)</span></div>
         <p class="client-desc">Elaboración del plan de ventas 2021 para Lima: proyección por canal, definición de cuotas por zona y estructura de seguimiento para la fuerza comercial.</p>
+        </div>
+      </div>
+      <div class="client-card">
+        <div class="client-logo-wrap"><img src="Imagenes/chio lecca logo.png" alt="Chio Lecca" style="transform:scale(0.85);"></div>
+        <div>
+        <div class="client-name">Chio Lecca</div>
+        <div class="client-cat">Transformación Digital <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2026)</span></div>
+        <p class="client-desc">Consultoría de transformación digital para la escuela de moda y diseño, en paralelo a la docencia del curso de IA Aplicada en la misma institución.</p>
         </div>
       </div>
     </div>
@@ -611,10 +742,6 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         <div><div class="teach-name">IdeaLab Innovation Hub</div><div class="teach-inst">ProInnóvate · Cusco</div><div class="teach-spec">Facilitador en Aceleración e Incubación</div></div>
       </div>
       <div class="teach-card">
-        <div class="teach-logo-wrap"><img src="Imagenes/wichay continental logo.png" alt="Universidad Continental" style="transform:scale(1.3);"></div>
-        <div><div class="teach-name">PeakUP</div><div class="teach-inst">Universidad Continental</div><div class="teach-spec">Lean Startup · BMC · Estrategia</div></div>
-      </div>
-      <div class="teach-card">
         <div class="teach-logo-wrap"><img src="Imagenes/utp.jpg" alt="UTP"></div>
         <div><div class="teach-name">StartUTP</div><div class="teach-inst">Universidad Tecnológica del Perú</div><div class="teach-spec">Scrum · Scope Canvas · Validación</div></div>
       </div>
@@ -629,6 +756,10 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
       <div class="teach-card">
         <div class="teach-logo-wrap"><img src="Imagenes/wichay continental logo.png" alt="Universidad Continental" style="transform:scale(1.3);"></div>
         <div><div class="teach-name">Wichay</div><div class="teach-inst">Universidad Continental</div><div class="teach-spec">Estrategia Comercial · Go-to-Market</div></div>
+      </div>
+      <div class="teach-card">
+        <div class="teach-logo-wrap"><img src="Imagenes/chio lecca logo.png" alt="Chio Lecca"></div>
+        <div><div class="teach-name">Chio Lecca</div><div class="teach-inst">Escuela de Moda y Diseño</div><div class="teach-spec">IA Aplicada</div></div>
       </div>
     </div>
   </div>
