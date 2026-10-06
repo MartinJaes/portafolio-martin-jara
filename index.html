@@ -9,6 +9,10 @@
 <meta name="author" content="Martín Jara">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://martinjara.work/">
+<link rel="alternate" hreflang="es" href="https://martinjara.work/">
+<link rel="alternate" hreflang="en" href="https://martinjara.work/?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://martinjara.work/">
+<script>(function(){try{var p=new URLSearchParams(location.search).get("lang");var s=null;try{s=localStorage.getItem("lang");}catch(e){}var l=(p==="en"||p==="es")?p:(s==="en"?"en":"es");document.documentElement.lang=l;}catch(e){}})();</script>
 <meta property="og:type" content="website">
 <meta property="og:title" content="Martín Jara — Data, BI e IA aplicada · Desarrollo full stack">
 <meta property="og:description" content="Data, inteligencia de negocios e IA aplicada. Construyo sistemas de BI, automatizaciones y plataformas en producción con Next.js, Supabase, Apps Script y BigQuery. Lima, Perú · remoto o híbrido.">
@@ -20,6 +24,7 @@
 <meta property="og:url" content="https://martinjara.work/">
 <meta property="og:site_name" content="Martín Jara">
 <meta property="og:locale" content="es_PE">
+<meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Martín Jara — Data, BI e IA aplicada · Desarrollo full stack">
 <meta name="twitter:description" content="Data, inteligencia de negocios e IA aplicada. Construyo sistemas de BI, automatizaciones y plataformas en producción con Next.js, Supabase, Apps Script y BigQuery. Lima, Perú · remoto o híbrido.">
@@ -31,8 +36,8 @@
   "@type": "Person",
   "name": "Martín Jara Estrella",
   "alternateName": "Martín Jara",
-  "jobTitle": "Consultor en Estrategia de Negocios, Business Intelligence e Inteligencia Artificial",
-  "description": "Consultor con más de 10 años en estrategia comercial, revenue management, business intelligence y transformación digital. Fundador de GATO y del ERP modular Contigo.",
+  "jobTitle": "Jefe de Inteligencia Empresarial y Transformación Digital",
+  "description": "Más de 10 años en planificación comercial, revenue management e inteligencia de negocios. Diseña y construye sistemas de datos, BI e IA aplicada con Next.js, Supabase, Google Apps Script y BigQuery.",
   "url": "https://martinjara.work/",
   "image": "https://martinjara.work/Imagenes/Foto%20Formal%20SC.jpg",
   "email": "mailto:martin.jar.est@gmail.com",
@@ -46,13 +51,7 @@
   "worksFor": [
     {
       "@type": "Organization",
-      "name": "Swiss Holding AG",
-      "url": "https://martinjara.work/#experiencia"
-    },
-    {
-      "@type": "Organization",
-      "name": "GATO",
-      "url": "https://gato.pe/"
+      "name": "Swiss Holding AG"
     }
   ],
   "alumniOf": [
@@ -72,13 +71,15 @@
     "Automatización Empresarial",
     "Power BI",
     "BigQuery",
-    "Product Management"
+    "Product Management",
+    "Next.js",
+    "Supabase",
+    "Google Apps Script"
   ],
   "knowsLanguage": ["es", "en"],
   "sameAs": [
     "https://linkedin.com/in/martin-jara-est",
-    "https://gato.pe/",
-    "https://contigo.com.pe/"
+    "https://github.com/MartinJaes"
   ]
 }
 </script>
@@ -404,6 +405,33 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
 }
 .venture-highlights.stack{display:flex;flex-wrap:wrap;gap:6px;}
 .venture-highlights.stack .venture-highlight{display:inline-block;width:auto;padding:4px 11px;font-size:12px;border-radius:999px;}
+
+/* v2: idioma, stack, consultoría */
+html[lang="es"] [data-l="en"],html[lang="en"] [data-l="es"]{display:none !important;}
+.nav-right{display:flex;align-items:center;gap:10px;}
+.lang-switch{display:flex;border:1px solid rgba(255,255,255,0.35);border-radius:999px;overflow:hidden;}
+.lang-switch button{background:none;border:0;color:rgba(255,255,255,0.8);font:600 12px 'DM Sans',sans-serif;padding:6px 12px;cursor:pointer;letter-spacing:0.5px;}
+html[lang="es"] .lang-switch button[data-set="es"],html[lang="en"] .lang-switch button[data-set="en"]{background:var(--coral);color:#fff;}
+.exp-date-inline{color:var(--blue);font-weight:500;}
+.section-intro{font-size:14px;color:var(--mut);margin:-8px 0 20px;}
+.sub-label{margin-top:28px;margin-bottom:14px;}
+.venture-card{scroll-margin-top:90px;}
+.venture-card .dash-imgs{margin-top:4px;}
+.venture-highlights.stack{margin-top:12px;}
+.svc-card{background:#fff;}
+.svc-used{font-size:12px;color:var(--mut);margin-top:12px;padding-top:10px;border-top:1px dashed var(--bdr);}
+.svc-used a{color:var(--blue);text-decoration:none;font-weight:600;}
+.svc-used a:hover{text-decoration:underline;}
+.client-list{list-style:none;margin-top:6px;display:grid;grid-template-columns:1fr 1fr;gap:14px 24px;}
+.client-list li{display:flex;gap:12px;align-items:flex-start;}
+.client-list .cl-logo{width:44px;height:44px;border:1px solid var(--bdr);border-radius:6px;background:#fff;padding:4px;object-fit:contain;flex-shrink:0;}
+.client-list .cl-name{font-weight:700;font-size:14px;}
+.client-list .cl-date{color:var(--blue);font-weight:500;font-size:12px;margin-left:8px;}
+.client-list .cl-desc{font-size:13px;line-height:1.55;margin-top:2px;}
+.cta-buttons{flex-wrap:wrap;}
+@media (max-width:900px){.client-list{grid-template-columns:1fr;}}
+@media (max-width:768px){.nav-right{margin-left:auto;}}
+@media (max-width:680px){.venture-header{flex-direction:column;gap:12px;}.venture-logo-wrap{width:64px;height:64px;}.svc-desc,.exp-desc,.venture-desc,.dash-desc{text-align:left;}.exp-item{flex-direction:column;gap:12px;}.exp-logo{width:64px;height:64px;}}
 </style>
 </head>
 <body>
@@ -413,94 +441,299 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
 <nav class="navbar">
   <div class="container navbar-inner">
     <img src="Imagenes/logo personal negativo sin fondo.png" alt="Martín Jara" class="navbar-logo">
-    <button class="navbar-toggle" id="navToggle" aria-label="Menú">
-      <span></span><span></span><span></span>
-    </button>
     <div class="navbar-links" id="navLinks">
-      <a href="#perfil">Perfil</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#formacion">Formación</a>
-      <a href="#consultoria">Consultoría</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#docencia">Docencia</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#portafolio">Portafolio</a>
+      <a href="#perfil"><span data-l="es">Perfil</span><span data-l="en">Profile</span></a>
+      <a href="#proyectos"><span data-l="es">Proyectos</span><span data-l="en">Projects</span></a>
+      <a href="#stack"><span data-l="es">Stack técnico</span><span data-l="en">Tech stack</span></a>
+      <a href="#experiencia"><span data-l="es">Experiencia</span><span data-l="en">Experience</span></a>
+      <a href="#formacion"><span data-l="es">Formación</span><span data-l="en">Education</span></a>
+      <a href="#docencia"><span data-l="es">Docencia</span><span data-l="en">Teaching</span></a>
+      <a href="#contacto"><span data-l="es">Contacto</span><span data-l="en">Contact</span></a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" data-set="es" lang="es">ES</button>
+        <button type="button" data-set="en" lang="en">EN</button>
+      </div>
+      <button class="navbar-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
+
+<!-- 01 · PERFIL -->
 <section class="hero" id="perfil">
   <div class="container hero-inner">
     <img src="Imagenes/Foto Formal SC.jpg" alt="Martín Jara" class="hero-photo">
     <div>
-      <div class="hero-prelabel">Data · BI · IA aplicada · Desarrollo</div>
+      <div class="hero-prelabel"><span data-l="es">Data · BI · IA aplicada · Desarrollo full stack</span><span data-l="en">Data · BI · Applied AI · Full-stack development</span></div>
       <h1 class="hero-name">Martín Jara</h1>
       <div class="pills">
-        <span class="pill">Data e Inteligencia de Negocios</span>
-        <span class="pill">IA aplicada y automatización</span>
-        <span class="pill">Desarrollo full stack</span>
-        <span class="pill">Transformación Digital</span>
-        <span class="pill">Revenue Management</span>
+        <span class="pill"><span data-l="es">Data e Inteligencia de Negocios</span><span data-l="en">Data &amp; Business Intelligence</span></span>
+        <span class="pill"><span data-l="es">IA aplicada y automatización</span><span data-l="en">Applied AI &amp; automation</span></span>
+        <span class="pill"><span data-l="es">Desarrollo full stack</span><span data-l="en">Full-stack development</span></span>
+        <span class="pill"><span data-l="es">Transformación Digital</span><span data-l="en">Digital transformation</span></span>
+        <span class="pill"><span data-l="es">Revenue Management</span><span data-l="en">Revenue management</span></span>
       </div>
-      <p class="hero-tag">Convierto datos en decisiones y construyo con inteligencia artificial los sistemas que las sostienen.</p>
-      <p class="hero-p">Más de 10 años en planificación comercial, revenue management e inteligencia de negocios. Hoy lidero el área de Inteligencia de Negocios de un holding comercial con tres unidades de negocio y, como consultor independiente, diseño sistemas de BI, automatizaciones y plataformas para empresas de los sectores farmacéutico, educación y software. Desarrollo con agentes de IA en Next.js, Supabase, Google Apps Script y BigQuery, con entregas documentadas y despliegue continuo.</p>
+      <p class="hero-tag"><span data-l="es">Diseño y construyo sistemas de datos e IA para negocio: desde la base de datos hasta el tablero que usa la gerencia.</span><span data-l="en">I design and build data and AI systems for business, from the database to the dashboard leadership relies on.</span></p>
+      <p class="hero-p" data-l="es">Más de 10 años en planificación comercial, revenue management e inteligencia de negocios. Hoy lidero el área de Inteligencia de Negocios de un holding comercial con tres unidades de negocio y, como consultor independiente, desarrollo plataformas y sistemas de BI para empresas de los sectores farmacéutico, educación y software. Construyo con agentes de IA sobre Next.js, Supabase, Google Apps Script y BigQuery, con pruebas automatizadas y despliegue continuo.</p>
+      <p class="hero-p" data-l="en">10+ years in commercial planning, revenue management and business intelligence. I currently lead the Business Intelligence area of a commercial holding with three business units and, as an independent consultant, I build platforms and BI systems for companies in the pharmaceutical, education and software sectors. I build with AI agents on Next.js, Supabase, Google Apps Script and BigQuery, with automated testing and continuous deployment.</p>
       <div class="hero-stats">
         <div>
           <div class="hero-stat-num">+10</div>
-          <div class="hero-stat-lbl">Años de experiencia</div>
+          <div class="hero-stat-lbl"><span data-l="es">Años de experiencia</span><span data-l="en">Years of experience</span></div>
         </div>
         <div>
           <div class="hero-stat-num">6</div>
-          <div class="hero-stat-lbl">Personas a cargo</div>
+          <div class="hero-stat-lbl"><span data-l="es">Personas a cargo</span><span data-l="en">Direct reports</span></div>
         </div>
         <div>
           <div class="hero-stat-num">5</div>
-          <div class="hero-stat-lbl">Apps internas en producción</div>
+          <div class="hero-stat-lbl"><span data-l="es">Apps internas en producción</span><span data-l="en">Internal apps in production</span></div>
         </div>
         <div>
           <div class="hero-stat-num">40</div>
-          <div class="hero-stat-lbl">Usuarios ejecutivos</div>
+          <div class="hero-stat-lbl"><span data-l="es">Usuarios ejecutivos</span><span data-l="en">Executive users</span></div>
         </div>
       </div>
       <div class="hero-cta">
-        <a href="https://calendly.com/martin-jar-est/30min" target="_blank" class="btn-hero">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-          Agendar 30 minutos
+        <a href="#proyectos" class="btn-hero">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>
+          <span data-l="es">Ver proyectos</span><span data-l="en">See projects</span>
         </a>
         <a href="CV-Martin-Jara.pdf" target="_blank" class="btn-hero-ghost" download>
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5M12 15V3"/></svg>
-          Descargar CV
+          <span data-l="es">Descargar CV</span><span data-l="en">Download CV (Spanish)</span>
+        </a>
+        <a href="https://calendly.com/martin-jar-est/30min" target="_blank" class="btn-hero-ghost">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <span data-l="es">Agendar 30 minutos</span><span data-l="en">Book a 30-minute call</span>
         </a>
       </div>
       <div class="hero-contact">
         <a href="mailto:martin.jar.est@gmail.com" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>martin.jar.est@gmail.com</a>
         <a href="https://linkedin.com/in/martin-jara-est" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>linkedin.com/in/martin-jara-est</a>
         <a href="https://github.com/MartinJaes" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:4px;"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.3 1.9 1.3 1.1 1.8 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>github.com/MartinJaes</a>
-        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lima, Perú · Remoto o híbrido</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-l="es">Lima, Perú · Remoto o híbrido</span><span data-l="en">Lima, Peru · Remote or hybrid</span></span>
       </div>
     </div>
   </div>
 </section>
 
+<!-- 02 · PROYECTOS -->
+<section class="section" id="proyectos">
+  <div class="container">
+    <div class="section-label"><span data-l="es">02 · Proyectos de desarrollo</span><span data-l="en">02 · Development projects</span></div>
+    <h2 class="section-title"><span data-l="es">Sistemas que construyo</span><span data-l="en">Systems I build</span></h2>
+    <p class="section-intro"><span data-l="es">La mayor parte del código vive en repositorios privados de clientes. Aquí está qué resuelve cada sistema y con qué está hecho.</span><span data-l="en">Most of the code lives in private client repositories. Here is what each system solves and what it is built with.</span></p>
+
+    <div class="venture-card" id="p-b2b">
+      <div class="venture-header">
+        <div class="venture-logo-wrap"><img src="Imagenes/Swiss Holdong Logo.jpg" alt="Swiss Holding AG"></div>
+        <div>
+          <div class="venture-name"><span data-l="es">Portal B2B de cotizaciones</span><span data-l="en">B2B quoting portal</span></div>
+          <div class="venture-tag" style="margin-bottom:8px;"><span data-l="es">Swiss Holding AG · en salida a producción</span><span data-l="en">Swiss Holding AG · going into production</span></div>
+          <p class="venture-desc" data-l="es">Portal para la red de dealers con catálogo de más de 8 mil ofertas de dos empresas, carrito y pedidos. El motor de precios vive en funciones de la base y el pedido se recotiza en el servidor; conector al ERP programado y 49 acciones de servidor con control por rol.</p>
+          <p class="venture-desc" data-l="en">Portal for the dealer network with a catalog of more than 8,000 offers from two companies, cart and orders. The pricing engine lives in database functions and every order is re-priced on the server; scheduled ERP connector and 49 server actions with role-based access.</p>
+          <div class="venture-highlights stack"><div class="venture-highlight">Next.js 16</div><div class="venture-highlight">React 19</div><div class="venture-highlight">TypeScript</div><div class="venture-highlight">PostgreSQL · Supabase</div><div class="venture-highlight">Zod · Vitest</div><div class="venture-highlight">GitHub Actions · Vercel</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="venture-card" id="p-erp">
+      <div class="venture-header">
+        <div class="venture-logo-wrap"><img src="Imagenes/agencia gato logo.jpg" alt="Grupo Gato"></div>
+        <div>
+          <div class="venture-name"><span data-l="es">ERP interno multiempresa</span><span data-l="en">Multi-company internal ERP</span></div>
+          <div class="venture-tag" style="margin-bottom:8px;"><span data-l="es">Grupo Gato · en producción</span><span data-l="en">Grupo Gato · in production</span></div>
+          <p class="venture-desc" data-l="es">Desarrollado como único desarrollador con agentes de IA: CRM, proyectos, cobranzas, RR. HH. con contratos y firma, y propuestas comerciales en PDF. Migración de PEN 1.7 M en cobranzas históricas conciliadas al céntimo; pruebas automatizadas en cada push.</p>
+          <p class="venture-desc" data-l="en">Built as the sole developer, working with AI agents: CRM, projects, collections, HR with contracts and e-signature, and commercial proposals in PDF. Migrated PEN 1.7M in historical receivables reconciled to the cent; automated tests on every push.</p>
+          <div class="venture-highlights stack"><div class="venture-highlight">Next.js</div><div class="venture-highlight">TypeScript</div><div class="venture-highlight">Supabase</div><div class="venture-highlight">shadcn/ui</div><div class="venture-highlight">Playwright · Vitest</div><div class="venture-highlight">GitHub Actions · Vercel</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="venture-card" id="p-contigo">
+      <div class="venture-header">
+        <div class="venture-logo-wrap" style="border:2px solid var(--blue);padding:6px;"><img src="Imagenes/contigo logo.svg" alt="Contigo ERP"></div>
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+            <div class="venture-name">Contigo ERP</div>
+            <a href="https://contigo.com.pe/" target="_blank" class="venture-link"><span data-l="es">Visitar sitio →</span><span data-l="en">Visit site →</span></a>
+          </div>
+          <div class="venture-tag" style="margin-bottom:8px;"><span data-l="es">ERP SaaS para pymes con integración SUNAT · toma del desarrollo y la operación</span><span data-l="en">SaaS ERP for SMEs integrated with SUNAT, Peru's tax authority · took over development and operations</span></div>
+          <p class="venture-desc" data-l="es">Restablecimos la sincronización de comprobantes con SUNAT (SIRE) y recuperamos dos meses de datos de 8 empresas sin duplicados; servicios internos asegurados detrás del proxy HTTPS, acceso por llaves SSH y cola de correos contenida sin pérdida de datos.</p>
+          <p class="venture-desc" data-l="en">We restored invoice synchronization with SUNAT (SIRE) and recovered two months of data for 8 companies with no duplicates; internal services secured behind an HTTPS proxy, SSH key access, and the email queue contained with no data loss.</p>
+          <div class="venture-highlights stack"><div class="venture-highlight">Angular</div><div class="venture-highlight">Java · Spring Boot</div><div class="venture-highlight">Laravel</div><div class="venture-highlight">FastAPI</div><div class="venture-highlight">PostgreSQL · MySQL · Redis</div><div class="venture-highlight">Docker · Jenkins</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="venture-card" id="p-chio">
+      <div class="venture-header">
+        <div class="venture-logo-wrap"><img src="Imagenes/chio lecca logo.png" alt="Chio Lecca Fashion School"></div>
+        <div>
+          <div class="venture-name"><span data-l="es">Plataforma de gestión académica</span><span data-l="en">Academic management platform</span></div>
+          <div class="venture-tag" style="margin-bottom:8px;"><span data-l="es">Chio Lecca Fashion School · 2026 – actualidad</span><span data-l="en">Chio Lecca Fashion School · 2026 – present</span></div>
+          <p class="venture-desc" data-l="es">Horarios, proyectos y administración de la escuela, con un solucionador de asignación de aulas por programación con restricciones; BI contable-financiero y modelo predictivo de deserción estudiantil.</p>
+          <p class="venture-desc" data-l="en">Scheduling, projects and school administration, with a classroom-assignment solver based on constraint programming; accounting and finance BI and a predictive student-dropout model.</p>
+          <div class="venture-highlights stack"><div class="venture-highlight">Next.js</div><div class="venture-highlight">TypeScript</div><div class="venture-highlight">Supabase</div><div class="venture-highlight">Python · OR-Tools</div><div class="venture-highlight">Vercel</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="venture-card" id="p-suite">
+      <div class="venture-header">
+        <div class="venture-logo-wrap"><img src="Imagenes/Swiss Holdong Logo.jpg" alt="Swiss Holding AG"></div>
+        <div>
+          <div class="venture-name"><span data-l="es">Suite de aplicaciones internas</span><span data-l="en">Internal app suite</span></div>
+          <div class="venture-tag" style="margin-bottom:8px;">Swiss Holding AG · Google Apps Script</div>
+          <p class="venture-desc" data-l="es">Portal BI de 15 módulos con permisos por módulo y filtro por fila, CRM web sincronizado con Google Calendar, ETL que consolida el ERP de 3 empresas, motor de comisiones multientidad y seguimiento de capacitación sobre BigQuery, con inicio de sesión único entre apps.</p>
+          <p class="venture-desc" data-l="en">15-module BI portal with module-level permissions and row-level filtering, web CRM synced with Google Calendar, ETL that consolidates the ERP of 3 companies, multi-entity commission engine and a training tracker on BigQuery, with single sign-on across apps.</p>
+          <div class="venture-highlights stack"><div class="venture-highlight">Google Apps Script</div><div class="venture-highlight">BigQuery</div><div class="venture-highlight">Meta Graph API</div><div class="venture-highlight">GA4 Data API</div><div class="venture-highlight">Chart.js</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="venture-card" id="p-gador">
+      <div class="venture-header">
+        <div class="venture-logo-wrap"><img src="Imagenes/gador logo.jpg" alt="Gador Perú"></div>
+        <div>
+          <div class="venture-name"><span data-l="es">Automatización comercial con agentes de IA</span><span data-l="en">Commercial automation with AI agents</span></div>
+          <div class="venture-tag" style="margin-bottom:8px;"><span data-l="es">Gador Perú · 2026 – actualidad</span><span data-l="en">Gador Perú · 2026 – present</span></div>
+          <p class="venture-desc" data-l="es">Agentes reutilizables para la carga y homologación mensual de sell in, sell out y cobranzas de dos unidades de negocio, con conciliación exacta contra las fuentes.</p>
+          <p class="venture-desc" data-l="en">Reusable agents for the monthly loading and normalization of sell-in, sell-out and collections data for two business units, reconciled exactly against the sources.</p>
+          <div class="venture-highlights stack"><div class="venture-highlight">Google Apps Script</div><div class="venture-highlight">Google Workspace</div><div class="venture-highlight"><span data-l="es">Agentes de IA</span><span data-l="en">AI agents</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label sub-label"><span data-l="es">Demo pública y proyectos con capturas</span><span data-l="en">Public demo and projects with screenshots</span></div>
+
+    <div class="venture-card" id="p-opendata">
+      <div class="venture-header">
+        <div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+            <div class="venture-name"><span data-l="es">Educación superior en cifras</span><span data-l="en">Higher education in numbers</span></div>
+            <a href="https://script.google.com/macros/s/AKfycbz4XL6-eVPFl9hpVCQW9BAY1IKWmimh3RGj-xOtRRCoBFw6HwN25DZdUpHEsZzzQ4sw/exec" target="_blank" class="venture-link"><span data-l="es">Ver dashboard en vivo →</span><span data-l="en">View live dashboard →</span></a>
+          </div>
+          <div class="venture-tag" style="margin-bottom:8px;"><span data-l="es">Proyecto de datos abiertos · en vivo</span><span data-l="en">Open data project · live</span></div>
+          <p class="venture-desc" data-l="es">Dashboard público de datos de educación superior en el Perú, construido sobre 3.7 millones de registros de ingresantes (2022–2025) de fuentes abiertas de SUNEDU y MINEDU. Incluye evolución anual, comparación pública/privada, segmentación por género y categoría, rankings de carreras y universidades, y proyecciones 2026 con regresión lineal.</p>
+          <p class="venture-desc" data-l="en">Public dashboard of higher education data in Peru, built on 3.7 million records of admitted students (2022–2025) from SUNEDU and MINEDU open sources. It includes yearly trends, public vs. private comparison, segmentation by gender and category, program and university rankings, and 2026 projections with linear regression.</p>
+          <div class="dash-imgs">
+            <img src="Imagenes/Dashboard 1.png" alt="Dashboard Educación Perú BI — vista 1" onclick="openLightbox(this.src)">
+            <img src="Imagenes/Dashboard 2.png" alt="Dashboard Educación Perú BI — vista 2" onclick="openLightbox(this.src)">
+          </div>
+          <div class="venture-highlights stack"><div class="venture-highlight">BigQuery</div><div class="venture-highlight">Google Apps Script</div><div class="venture-highlight">Chart.js</div><div class="venture-highlight"><span data-l="es">Datos abiertos SUNEDU / MINEDU</span><span data-l="en">SUNEDU / MINEDU open data</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="venture-card" id="p-portal">
+      <div class="venture-header">
+        <div class="venture-logo-wrap"><img src="Imagenes/agencia gato logo.jpg" alt="Grupo Gato"></div>
+        <div>
+          <div class="venture-name"><span data-l="es">Portal del Colaborador</span><span data-l="en">Employee portal</span></div>
+          <div class="venture-tag" style="margin-bottom:8px;"><span data-l="es">Grupo Gato · Power Apps + Power Automate · etapa previa al ERP interno</span><span data-l="en">Grupo Gato · Power Apps + Power Automate · stage before the internal ERP</span></div>
+          <p class="venture-desc" data-l="es">Aplicación interna en Power Apps para la gestión de beneficios, vacaciones, cumpleaños y documentos del colaborador. Flujos de aprobación automatizados en Power Automate con notificaciones por correo y actualización de registros en tiempo real, en producción en el tenant corporativo de Gato.</p>
+          <p class="venture-desc" data-l="en">Internal Power Apps application to manage employee benefits, vacations, birthdays and documents. Approval flows automated in Power Automate with email notifications and real-time record updates, in production on Gato's corporate tenant.</p>
+          <div class="dash-imgs">
+            <img src="Imagenes/Power apps.png" alt="Portal del Colaborador — editor Power Apps" onclick="openLightbox(this.src)">
+            <img src="Imagenes/power automate.png" alt="Portal del Colaborador — flujo Power Automate" onclick="openLightbox(this.src)">
+          </div>
+          <div class="venture-highlights stack"><div class="venture-highlight">Power Apps</div><div class="venture-highlight">Power Automate</div><div class="venture-highlight">SharePoint</div><div class="venture-highlight">Microsoft 365</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · STACK -->
+<section class="section" id="stack">
+  <div class="container">
+    <div class="section-label"><span data-l="es">03 · Stack técnico</span><span data-l="en">03 · Tech stack</span></div>
+    <h2 class="section-title"><span data-l="es">Con qué construyo</span><span data-l="en">What I build with</span></h2>
+    <div class="svc-grid">
+      <div class="svc-card">
+        <div class="svc-header"><span class="svc-num">01</span><span class="svc-title"><span data-l="es">Desarrollo web</span><span data-l="en">Web development</span></span></div>
+        <p class="svc-desc"><span data-l="es">Aplicaciones web con lógica en el servidor, validación de datos y control de acceso por rol.</span><span data-l="en">Web applications with server-side logic, data validation and role-based access control.</span></p>
+        <div class="svc-tags"><span class="svc-tag">Next.js</span><span class="svc-tag">React</span><span class="svc-tag">TypeScript</span><span class="svc-tag">Tailwind</span><span class="svc-tag">shadcn/ui</span><span class="svc-tag">Zod</span></div>
+        <div class="svc-used"><span data-l="es">Usado en:</span><span data-l="en">Used in:</span> <a href="#p-b2b"><span data-l="es">Portal B2B</span><span data-l="en">B2B portal</span></a> · <a href="#p-erp"><span data-l="es">ERP interno</span><span data-l="en">Internal ERP</span></a> · <a href="#p-chio"><span data-l="es">Plataforma académica</span><span data-l="en">Academic platform</span></a></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header"><span class="svc-num">02</span><span class="svc-title"><span data-l="es">Datos</span><span data-l="en">Data</span></span></div>
+        <p class="svc-desc"><span data-l="es">Modelado de datos y lógica de negocio en la base: precios, conciliaciones y consolidación entre empresas.</span><span data-l="en">Data modeling and business logic in the database: pricing, reconciliations and cross-company consolidation.</span></p>
+        <div class="svc-tags"><span class="svc-tag">PostgreSQL · Supabase</span><span class="svc-tag">PL/pgSQL</span><span class="svc-tag">BigQuery</span><span class="svc-tag">SQL</span><span class="svc-tag">MySQL</span><span class="svc-tag">Redis</span></div>
+        <div class="svc-used"><span data-l="es">Usado en:</span><span data-l="en">Used in:</span> <a href="#p-b2b"><span data-l="es">Portal B2B</span><span data-l="en">B2B portal</span></a> · <a href="#p-suite"><span data-l="es">Suite interna</span><span data-l="en">Internal suite</span></a> · <a href="#p-contigo">Contigo ERP</a> · <a href="#p-opendata"><span data-l="es">Educación en cifras</span><span data-l="en">Education in numbers</span></a></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header"><span class="svc-num">03</span><span class="svc-title"><span data-l="es">BI y analítica</span><span data-l="en">BI &amp; analytics</span></span></div>
+        <p class="svc-desc"><span data-l="es">Modelos estrella, tableros con acceso por rol y reportes que la gerencia usa para decidir.</span><span data-l="en">Star-schema models, role-based dashboards and reports leadership uses to make decisions.</span></p>
+        <div class="svc-tags"><span class="svc-tag">Power BI</span><span class="svc-tag"><span data-l="es">Cubos OLAP</span><span data-l="en">OLAP cubes</span></span><span class="svc-tag">Google Apps Script</span><span class="svc-tag">Chart.js</span><span class="svc-tag">Python</span></div>
+        <div class="svc-used"><span data-l="es">Usado en:</span><span data-l="en">Used in:</span> <a href="#p-suite"><span data-l="es">Suite interna</span><span data-l="en">Internal suite</span></a> · <a href="#p-gador">Gador</a> · <a href="#p-opendata"><span data-l="es">Educación en cifras</span><span data-l="en">Education in numbers</span></a> · <a href="#experiencia">La Tarumba</a></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header"><span class="svc-num">04</span><span class="svc-title"><span data-l="es">IA y automatización</span><span data-l="en">AI &amp; automation</span></span></div>
+        <p class="svc-desc"><span data-l="es">Desarrollo con agentes de IA y automatización de carga, homologación y conciliación de datos.</span><span data-l="en">Development with AI agents and automated data loading, normalization and reconciliation.</span></p>
+        <div class="svc-tags"><span class="svc-tag"><span data-l="es">Agentes de IA</span><span data-l="en">AI agents</span></span><span class="svc-tag">Python · OR-Tools</span><span class="svc-tag">Power Automate</span><span class="svc-tag">Power Apps</span></div>
+        <div class="svc-used"><span data-l="es">Usado en:</span><span data-l="en">Used in:</span> <a href="#p-gador">Gador</a> · <a href="#p-erp"><span data-l="es">ERP interno</span><span data-l="en">Internal ERP</span></a> · <a href="#p-chio"><span data-l="es">Plataforma académica</span><span data-l="en">Academic platform</span></a> · <a href="#p-portal"><span data-l="es">Portal del Colaborador</span><span data-l="en">Employee portal</span></a></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header"><span class="svc-num">05</span><span class="svc-title"><span data-l="es">Calidad y despliegue</span><span data-l="en">Quality &amp; deployment</span></span></div>
+        <p class="svc-desc"><span data-l="es">Pruebas automatizadas e integración continua en cada cambio.</span><span data-l="en">Automated testing and continuous integration on every change.</span></p>
+        <div class="svc-tags"><span class="svc-tag">Vitest</span><span class="svc-tag">Playwright</span><span class="svc-tag">GitHub Actions</span><span class="svc-tag">Vercel</span><span class="svc-tag">Docker</span><span class="svc-tag">Jenkins</span></div>
+        <div class="svc-used"><span data-l="es">Usado en:</span><span data-l="en">Used in:</span> <a href="#p-b2b"><span data-l="es">Portal B2B</span><span data-l="en">B2B portal</span></a> · <a href="#p-erp"><span data-l="es">ERP interno</span><span data-l="en">Internal ERP</span></a> · <a href="#p-contigo">Contigo ERP</a></div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-header"><span class="svc-num">06</span><span class="svc-title"><span data-l="es">Gestión de producto</span><span data-l="en">Product management</span></span></div>
+        <p class="svc-desc"><span data-l="es">Backlog, priorización y entregas incrementales; certificado como Scrum Master y Scrum Product Owner.</span><span data-l="en">Backlog, prioritization and incremental delivery; certified Scrum Master and Scrum Product Owner.</span></p>
+        <div class="svc-tags"><span class="svc-tag">Scrum</span><span class="svc-tag">Kanban</span><span class="svc-tag"><span data-l="es">Priorización</span><span data-l="en">Prioritization</span></span></div>
+        <div class="svc-used"><span data-l="es">Usado en:</span><span data-l="en">Used in:</span> <a href="#experiencia"><span data-l="es">más de 10 desarrollos dirigidos en GATO</span><span data-l="en">10+ projects led at GATO</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · EXPERIENCIA -->
 <section class="section" id="experiencia">
   <div class="container">
-    <div class="section-label">02 · Trayectoria</div>
-    <h2 class="section-title">Experiencia laboral reciente</h2>
+    <div class="section-label"><span data-l="es">04 · Trayectoria</span><span data-l="en">04 · Career</span></div>
+    <h2 class="section-title"><span data-l="es">Experiencia laboral</span><span data-l="en">Work experience</span></h2>
 
     <div class="exp-item">
       <img src="Imagenes/Swiss Holdong Logo.jpg" alt="Swiss Holding AG" class="exp-logo">
       <div>
-        <div class="exp-role">Jefe de Inteligencia Empresarial y Transformación Digital</div>
-        <div class="exp-company">Swiss Holding AG S.A.C. · Miraflores, Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Julio 2026 — Presente · ascendido desde Líder de Inteligencia Empresarial, marzo 2026)</span></div>
-        <p class="exp-desc">Lidero un equipo de 6 personas en la inteligencia de negocios y la transformación digital del holding. Construí 5 aplicaciones internas en Google Apps Script —portal BI de 15 módulos con acceso por rol para 40 usuarios, CRM, consolidador del ERP de 3 empresas, motor de comisiones y seguimiento de capacitación sobre BigQuery— y lidero la salida a producción del portal B2B de cotizaciones para la red de dealers (Next.js, Supabase). Eliminé el pago de licencias de Power BI y los reportes pasaron de actualización semanal a tiempo real; detecté ventas sin margen y, con ajustes en la política de precios, el forecast proyecta recuperar 8% de los ingresos anuales; reduje 15% el costo operativo al detectar incumplimientos en las políticas de entrega.</p>
+        <div class="exp-role"><span data-l="es">Jefe de Inteligencia Empresarial y Transformación Digital</span><span data-l="en">Head of Business Intelligence and Digital Transformation</span></div>
+        <div class="exp-company">Swiss Holding AG S.A.C. · Miraflores, Lima <span class="exp-date-inline"><span data-l="es">(Julio 2026 — Presente · ascendido desde Líder de Inteligencia Empresarial, marzo 2026)</span><span data-l="en">(July 2026 — Present · promoted from Business Intelligence Lead, March 2026)</span></span></div>
+        <p class="exp-desc" data-l="es">Lidero un equipo de 6 personas en la inteligencia de negocios y la transformación digital del holding. Construí 5 aplicaciones internas en Google Apps Script —portal BI de 15 módulos con acceso por rol para 40 usuarios, CRM, consolidador del ERP de 3 empresas, motor de comisiones y seguimiento de capacitación sobre BigQuery— y lidero la salida a producción del portal B2B de cotizaciones para la red de dealers (Next.js, Supabase). Eliminé el pago de licencias de Power BI y los reportes pasaron de actualización semanal a tiempo real; detecté ventas sin margen y, con ajustes en la política de precios, el forecast proyecta recuperar 8% de los ingresos anuales; reduje 15% el costo operativo al detectar incumplimientos en las políticas de entrega.</p>
+        <p class="exp-desc" data-l="en">I lead a team of 6 in business intelligence and digital transformation for the holding. I built 5 internal applications in Google Apps Script (a 15-module BI portal with role-based access for 40 users, a CRM, an ERP consolidator for 3 companies, a commission engine and a training tracker on BigQuery) and I am leading the production launch of the B2B quoting portal for the dealer network (Next.js, Supabase). I eliminated Power BI licensing costs and reports went from weekly updates to real time; I detected sales made without margin and, with pricing-policy adjustments, the forecast projects recovering 8% of annual revenue; I cut operating costs by 15% by detecting non-compliance with delivery policies.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <img src="Imagenes/LOGO PERSONAL.png" alt="Martín Jara" class="exp-logo">
+      <div>
+        <div class="exp-role"><span data-l="es">Consultor independiente en Data, BI e IA</span><span data-l="en">Independent consultant in Data, BI and AI</span></div>
+        <div class="exp-company"><span data-l="es">Lima · remoto</span><span data-l="en">Lima · remote</span> <span class="exp-date-inline"><span data-l="es">(Abril 2025 — Presente)</span><span data-l="en">(April 2025 — Present)</span></span></div>
+        <ul class="client-list">
+          <li><img src="Imagenes/chio lecca logo.png" alt="Chio Lecca" class="cl-logo"><div><span class="cl-name">Chio Lecca Fashion School</span><span class="cl-date"><span data-l="es">2026 – actualidad</span><span data-l="en">2026 – present</span></span><div class="cl-desc"><span data-l="es">Plataforma de gestión, BI contable-financiero y modelo de deserción; diseño y dicto el programa "Metodologías Ágiles e IA".</span><span data-l="en">Management platform, accounting and finance BI and dropout model; I designed and teach the "Agile Methodologies and AI" program.</span></div></div></li>
+          <li><img src="Imagenes/gador logo.jpg" alt="Gador Perú" class="cl-logo"><div><span class="cl-name">Gador Perú</span><span class="cl-date"><span data-l="es">Jun 2026 – actualidad</span><span data-l="en">Jun 2026 – present</span></span><div class="cl-desc"><span data-l="es">Sistema de inteligencia comercial de dos unidades de negocio para ~25 usuarios, sin costo de licencias de BI.</span><span data-l="en">Commercial intelligence system for two business units and ~25 users, with no BI licensing costs.</span></div></div></li>
+          <li><img src="Imagenes/contigo logo.svg" alt="Contigo ERP" class="cl-logo"><div><span class="cl-name">Contigo ERP</span><span class="cl-date"><span data-l="es">Oct 2026 – actualidad</span><span data-l="en">Oct 2026 – present</span></span><div class="cl-desc"><span data-l="es">Toma del desarrollo y la operación del ERP; sincronización con SUNAT restablecida.</span><span data-l="en">Took over development and operations of the ERP; SUNAT synchronization restored.</span></div></div></li>
+          <li><img src="Imagenes/la tarumba logo.png" alt="La Tarumba" class="cl-logo"><div><span class="cl-name">La Tarumba</span><span class="cl-date"><span data-l="es">Abr 2025 – Jun 2026</span><span data-l="en">Apr 2025 – Jun 2026</span></span><div class="cl-desc"><span data-l="es">Revenue management con pricing dinámico: ingresos +3.5% anual pese a una menor ocupación. BI comercial con la API de Ticketmaster, modelo estrella y cubos OLAP; el primer sistema de reportes comerciales de la compañía.</span><span data-l="en">Revenue management with dynamic pricing: revenue up 3.5% per year despite lower occupancy. Commercial BI with the Ticketmaster API, star schema and OLAP cubes; the company's first commercial reporting system.</span></div></div></li>
+          <li><img src="Imagenes/universidad politecnica logo.png" alt="Universidad Politécnica del Perú" class="cl-logo"><div><span class="cl-name">Universidad Politécnica del Perú</span><span class="cl-date"><span data-l="es">Jun – Nov 2025</span><span data-l="en">Jun – Nov 2025</span></span><div class="cl-desc"><span data-l="es">Modelo de metas comerciales, estructuración de la base de datos institucional y priorización de leads por semaforización.</span><span data-l="en">Sales-target model, institutional database structuring and traffic-light lead prioritization.</span></div></div></li>
+          <li><img src="Imagenes/inversiones el pino sin marco.jpg" alt="Inversiones el Pino" class="cl-logo"><div><span class="cl-name">Inversiones el Pino</span><span class="cl-date">2025</span><div class="cl-desc"><span data-l="es">Planificación de una intranet de gestión de contratos: requerimientos, arquitectura y hoja de ruta.</span><span data-l="en">Planning of a contract-management intranet: requirements, architecture and roadmap.</span></div></div></li>
+        </ul>
       </div>
     </div>
 
     <div class="exp-item">
       <img src="Imagenes/agencia gato logo.jpg" alt="GATO" class="exp-logo">
       <div>
-        <div class="exp-role">Director de Proyectos</div>
-        <div class="exp-company">GATO, agencia de desarrollo de software · Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Enero 2024 — Febrero 2026)</span></div>
-        <p class="exp-desc">Dirigí más de 10 desarrollos de software y web a medida —MVP, intranets, integraciones de pagos y sitios corporativos— para clientes como Laive, Asociación UNACEM y Universidad Norbert Wiener, con un equipo de hasta 25 colaboradores. Gestión ágil con Kanban para el flujo continuo de entregas y Scrum para desarrollos mayores; automaticé procesos internos con Power Automate como etapa previa a la intranet desarrollada a medida.</p>
+        <div class="exp-role"><span data-l="es">Director de Proyectos</span><span data-l="en">Project Director</span></div>
+        <div class="exp-company"><span data-l="es">GATO, agencia de desarrollo de software · Lima</span><span data-l="en">GATO, software development agency · Lima</span> <span class="exp-date-inline"><span data-l="es">(Enero 2024 — Febrero 2026)</span><span data-l="en">(January 2024 — February 2026)</span></span></div>
+        <p class="exp-desc" data-l="es">Dirigí más de 10 desarrollos de software y web a medida —MVP, intranets, integraciones de pagos y sitios corporativos— para clientes como Laive, Asociación UNACEM y Universidad Norbert Wiener, con un equipo de hasta 25 colaboradores. Gestión ágil con Kanban para el flujo continuo de entregas y Scrum para desarrollos mayores; automaticé procesos internos con Power Automate como etapa previa a la intranet desarrollada a medida.</p>
+        <p class="exp-desc" data-l="en">I led more than 10 custom software and web projects (MVPs, intranets, payment integrations and corporate websites) for clients such as Laive, Asociación UNACEM and Universidad Norbert Wiener, with a team of up to 25 people. Agile management with Kanban for continuous delivery and Scrum for larger builds; I automated internal processes with Power Automate as the stage before the custom-built intranet.</p>
       </div>
     </div>
 
@@ -508,57 +741,67 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
       <img src="Imagenes/Certus Logo.png" alt="Certus" class="exp-logo">
       <div>
         <div class="exp-role">Senior Business Planner</div>
-        <div class="exp-company">Certus · Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Noviembre 2021 — Diciembre 2023)</span></div>
-        <p class="exp-desc">Diseño del modelo de planeación y analítica comercial integrando adquisición, conversión, permanencia y rentabilidad en Power BI. Procesos ETL para consolidar fuentes dispersas y automatizar reportes ejecutivos, con modelos de proyección que soportaron un crecimiento de ventas de 7% anual y +1.5 pp en tasa de conversión. Reestructuración del esquema de comisiones y metas, alineándolo a productividad real y rentabilidad por canal.</p>
+        <div class="exp-company">Certus · Lima <span class="exp-date-inline"><span data-l="es">(Noviembre 2021 — Diciembre 2023)</span><span data-l="en">(November 2021 — December 2023)</span></span></div>
+        <p class="exp-desc" data-l="es">Diseño del modelo de planeación y analítica comercial integrando adquisición, conversión, permanencia y rentabilidad en Power BI. Procesos ETL para consolidar fuentes dispersas y automatizar reportes ejecutivos, con modelos de proyección que soportaron un crecimiento de ventas de 7% anual y +1.5 pp en tasa de conversión. Reestructuración del esquema de comisiones y metas, alineándolo a productividad real y rentabilidad por canal.</p>
+        <p class="exp-desc" data-l="en">Designed the commercial planning and analytics model in Power BI, integrating acquisition, conversion, retention and profitability. ETL processes to consolidate scattered sources and automate executive reporting, with forecasting models that supported 7% annual sales growth and +1.5 pp in conversion rate. Restructured the commission and target scheme to align it with real productivity and channel profitability.</p>
       </div>
     </div>
 
     <div class="exp-item">
       <img src="Imagenes/Manpower logo.png" alt="Manpower Perú" class="exp-logo">
       <div>
-        <div class="exp-role">Coordinador de Inteligencia de Negocios</div>
-        <div class="exp-company">Manpower Perú · Lima <span class="exp-date-inline" style="color:var(--blue);font-weight:500;">(Octubre 2020 — Noviembre 2021 · ascendido desde Analista de Inteligencia de Negocios)</span></div>
-        <p class="exp-desc">Analítica estratégica y automatización de reportes para cuentas corporativas, con tableros de control en Power BI. Diseño e implementación del sistema de reportes corporativos integrando data comercial, operativa y financiera. Gestión de desempeño comercial y efectividad promocional para la cuenta Nestlé, consolidando información de ejecución en campo para optimizar inversión y estrategia de marketing.</p>
+        <div class="exp-role"><span data-l="es">Coordinador de Inteligencia de Negocios</span><span data-l="en">Business Intelligence Coordinator</span></div>
+        <div class="exp-company">Manpower Perú · Lima <span class="exp-date-inline"><span data-l="es">(Octubre 2020 — Noviembre 2021 · ascendido desde Analista de Inteligencia de Negocios)</span><span data-l="en">(October 2020 — November 2021 · promoted from Business Intelligence Analyst)</span></span></div>
+        <p class="exp-desc" data-l="es">Analítica estratégica y automatización de reportes para cuentas corporativas, con tableros de control en Power BI. Diseño e implementación del sistema de reportes corporativos integrando data comercial, operativa y financiera. Gestión de desempeño comercial y efectividad promocional para la cuenta Nestlé, consolidando información de ejecución en campo para optimizar inversión y estrategia de marketing.</p>
+        <p class="exp-desc" data-l="en">Strategic analytics and report automation for corporate accounts, with Power BI dashboards. Designed and implemented the corporate reporting system integrating commercial, operational and financial data. Managed commercial performance and promotional effectiveness for the Nestlé account, consolidating field-execution data to optimize marketing investment and strategy.</p>
       </div>
     </div>
-
   </div>
 </section>
 
+<!-- 05 · FORMACIÓN -->
 <section class="section" id="formacion">
   <div class="container">
-    <div class="section-label">03 · Formación Académica</div>
-    <h2 class="section-title">Estudios y certificaciones</h2>
+    <div class="section-label"><span data-l="es">05 · Formación académica</span><span data-l="en">05 · Education</span></div>
+    <h2 class="section-title"><span data-l="es">Estudios y certificaciones</span><span data-l="en">Education and certifications</span></h2>
 
     <div class="study-grid">
       <div class="study-card">
         <div class="study-logo-wrap"><img src="Imagenes/obs logo.png" alt="OBS Business School" style="transform:scale(1.1);"></div>
         <div>
-          <div class="study-title">Maestría en Transformación Digital<span class="badge-curso">Admitido</span></div>
+          <div class="study-title"><span data-l="es">Maestría en Transformación Digital</span><span data-l="en">Master's in Digital Transformation</span><span class="badge-curso"><span data-l="es">Admitido</span><span data-l="en">Admitted</span></span></div>
           <div class="study-inst">OBS Business School – Universidad de Barcelona</div>
-          <div class="study-date">Inicio 2027</div>
+          <div class="study-date"><span data-l="es">Inicio 2027</span><span data-l="en">Starts 2027</span></div>
+        </div>
+      </div>
+      <div class="study-card">
+        <div class="study-logo-wrap"><img src="Imagenes/isam logo.png" alt="ISAM" style="transform:scale(1.15);"></div>
+        <div>
+          <div class="study-title"><span data-l="es">Bachillerato en Desarrollo de Software</span><span data-l="en">Technical degree in Software Development</span><span class="badge-curso"><span data-l="es">En curso</span><span data-l="en">In progress</span></span></div>
+          <div class="study-inst">ISAM</div>
+          <div class="study-date">2024 – 2027</div>
         </div>
       </div>
       <div class="study-card">
         <div class="study-logo-wrap"><img src="Imagenes/pacifico busines school logo.jpg" alt="Universidad del Pacífico" style="transform:scale(1.1);"></div>
         <div>
-          <div class="study-title">Especialización en Gestión Empresarial</div>
+          <div class="study-title"><span data-l="es">Especialización en Gestión Empresarial</span><span data-l="en">Specialization in Business Management</span></div>
           <div class="study-inst">Universidad del Pacífico</div>
-          <div class="study-date">Set 2025 – Mar 2026</div>
+          <div class="study-date"><span data-l="es">Set 2025 – Mar 2026</span><span data-l="en">Sep 2025 – Mar 2026</span></div>
         </div>
       </div>
       <div class="study-card">
         <div class="study-logo-wrap"><img src="Imagenes/toulouse.jpg" alt="Toulouse Lautrec" style="transform:scale(1.1);"></div>
         <div>
-          <div class="study-title">Especialización en Machine Learning y Ciencia de Datos</div>
+          <div class="study-title"><span data-l="es">Especialización en Machine Learning y Ciencia de Datos</span><span data-l="en">Specialization in Machine Learning and Data Science</span></div>
           <div class="study-inst">Toulouse Lautrec</div>
-          <div class="study-date">Abr – Oct 2023</div>
+          <div class="study-date"><span data-l="es">Abr – Oct 2023</span><span data-l="en">Apr – Oct 2023</span></div>
         </div>
       </div>
       <div class="study-card">
         <div class="study-logo-wrap"><img src="Imagenes/zegel logo.png" alt="Zegel"></div>
         <div>
-          <div class="study-title">Bachillerato en Marketing Estratégico<span class="badge-curso">En curso</span></div>
+          <div class="study-title"><span data-l="es">Bachillerato en Marketing Estratégico</span><span data-l="en">Technical degree in Strategic Marketing</span><span class="badge-curso"><span data-l="es">En curso</span><span data-l="en">In progress</span></span></div>
           <div class="study-inst">Zegel</div>
           <div class="study-date">2024 – 2027</div>
         </div>
@@ -566,22 +809,14 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
       <div class="study-card">
         <div class="study-logo-wrap"><img src="Imagenes/universidad de tarapaca logo.png" alt="Universidad de Tarapacá"></div>
         <div>
-          <div class="study-title">Bachiller en Administración de Empresas</div>
+          <div class="study-title"><span data-l="es">Bachiller en Administración de Empresas</span><span data-l="en">Bachelor's in Business Administration</span></div>
           <div class="study-inst">Universidad de Tarapacá</div>
           <div class="study-date">2014 – 2017</div>
         </div>
       </div>
-      <div class="study-card">
-        <div class="study-logo-wrap"><img src="Imagenes/isam logo.png" alt="ISAM" style="transform:scale(1.15);"></div>
-        <div>
-          <div class="study-title">Bachillerato en Desarrollo de Software<span class="badge-curso">En curso</span></div>
-          <div class="study-inst">ISAM</div>
-          <div class="study-date">2024 – 2027</div>
-        </div>
-      </div>
     </div>
 
-    <div class="certs-label">Certificaciones</div>
+    <div class="certs-label"><span data-l="es">Certificaciones</span><span data-l="en">Certifications</span></div>
     <div class="certs-grid">
       <div class="cert-row">
         <div class="cert-logo-wrap"><img src="Imagenes/Google Logo.png" alt="Google" style="transform:scale(1.25);"></div>
@@ -596,18 +831,6 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         <div><div class="cert-title">Google Business Intelligence Professional</div><div class="cert-issuer">Google Career Certificates · 2026</div></div>
       </div>
       <div class="cert-row">
-        <div class="cert-logo-wrap"><img src="Imagenes/pacifico busines school logo.jpg" alt="Universidad del Pacífico" style="transform:scale(1.25);"></div>
-        <div><div class="cert-title">Pricing y Revenue Management</div><div class="cert-issuer">Universidad del Pacífico · 2025</div></div>
-      </div>
-      <div class="cert-row">
-        <div class="cert-logo-wrap"><img src="Imagenes/pacifico busines school logo.jpg" alt="Universidad del Pacífico" style="transform:scale(1.25);"></div>
-        <div><div class="cert-title">Revenue Growth Hacking</div><div class="cert-issuer">Universidad del Pacífico · 2025</div></div>
-      </div>
-      <div class="cert-row">
-        <div class="cert-logo-wrap"><img src="Imagenes/idat logo.jpg" alt="IDAT"></div>
-        <div><div class="cert-title">Power BI</div><div class="cert-issuer">IDAT</div></div>
-      </div>
-      <div class="cert-row">
         <div class="cert-logo-wrap"><img src="Imagenes/certiprof logo.jpg" alt="Certiprof" style="transform:scale(0.8);"></div>
         <div><div class="cert-title">Scrum Master Professional Certificate</div><div class="cert-issuer">Certiprof</div></div>
       </div>
@@ -616,271 +839,82 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
         <div><div class="cert-title">Scrum Product Owner Professional Certificate</div><div class="cert-issuer">Certiprof</div></div>
       </div>
       <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/idat logo.jpg" alt="IDAT"></div>
+        <div><div class="cert-title">Power BI</div><div class="cert-issuer">IDAT</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/pacifico busines school logo.jpg" alt="Universidad del Pacífico" style="transform:scale(1.25);"></div>
+        <div><div class="cert-title"><span data-l="es">Pricing y Revenue Management</span><span data-l="en">Pricing and Revenue Management</span></div><div class="cert-issuer">Universidad del Pacífico · 2025</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/pacifico busines school logo.jpg" alt="Universidad del Pacífico" style="transform:scale(1.25);"></div>
+        <div><div class="cert-title">Revenue Growth Hacking</div><div class="cert-issuer">Universidad del Pacífico · 2025</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/netzun logo.png" alt="Netzun" style="transform:scale(1.5);"></div>
+        <div><div class="cert-title"><span data-l="es">Especialización en Transformación Digital</span><span data-l="en">Specialization in Digital Transformation</span></div><div class="cert-issuer">Netzun · 2025</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/netzun logo.png" alt="Netzun" style="transform:scale(1.5);"></div>
+        <div><div class="cert-title"><span data-l="es">Especialización en Emprendimiento</span><span data-l="en">Specialization in Entrepreneurship</span></div><div class="cert-issuer">Netzun · 2025</div></div>
+      </div>
+      <div class="cert-row">
+        <div class="cert-logo-wrap"><img src="Imagenes/netzun logo.png" alt="Netzun" style="transform:scale(1.5);"></div>
+        <div><div class="cert-title"><span data-l="es">Especialización en Marketing Digital</span><span data-l="en">Specialization in Digital Marketing</span></div><div class="cert-issuer">Netzun · 2025</div></div>
+      </div>
+      <div class="cert-row">
         <div class="cert-logo-wrap"><img src="Imagenes/universidad de alicante.png" alt="Universidad de Alicante" style="transform:scale(1.25);"></div>
-        <div><div class="cert-title">Lean Startup: desarrolla tu modelo de negocio</div><div class="cert-issuer">U. Alicante · UNIMOOC · 2017</div></div>
-      </div>
-      <div class="cert-row">
-        <div class="cert-logo-wrap"><img src="Imagenes/netzun logo.png" alt="Netzun" style="transform:scale(1.5);"></div>
-        <div><div class="cert-title">Especialización en Transformación Digital</div><div class="cert-issuer">Netzun · 2025</div></div>
-      </div>
-      <div class="cert-row">
-        <div class="cert-logo-wrap"><img src="Imagenes/netzun logo.png" alt="Netzun" style="transform:scale(1.5);"></div>
-        <div><div class="cert-title">Especialización en Emprendimiento</div><div class="cert-issuer">Netzun · 2025</div></div>
-      </div>
-      <div class="cert-row">
-        <div class="cert-logo-wrap"><img src="Imagenes/netzun logo.png" alt="Netzun" style="transform:scale(1.5);"></div>
-        <div><div class="cert-title">Especialización en Marketing Digital</div><div class="cert-issuer">Netzun · 2025</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="section" id="consultoria">
-  <div class="container">
-    <div class="section-label">04 · Consultoría Independiente</div>
-    <h2 class="section-title">Clientes & proyectos</h2>
-    <div class="cards-3">
-      <div class="client-card">
-        <div class="client-logo-wrap"><img src="Imagenes/gador logo.jpg" alt="Gador Perú" style="transform:scale(1.2);"></div>
-        <div>
-        <div class="client-name">Gador Perú</div>
-        <div class="client-cat">BI & Datos <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(Jun 2026 – Actualidad)</span></div>
-        <p class="client-desc">Diseño de procesos ETL para consolidar y automatizar fuentes de datos comerciales sobre Google Workspace. Sistema de inteligencia comercial de dos unidades de negocio para ~25 usuarios con acceso por representante, sin costo de licencias de BI y con carga y homologación mensual automatizada con agentes de IA.</p>
-        </div>
-      </div>
-      <div class="client-card">
-        <div class="client-logo-wrap"><img src="Imagenes/la tarumba logo.png" alt="La Tarumba"></div>
-        <div>
-        <div class="client-name">La Tarumba</div>
-        <div class="client-cat">Revenue Management · BI <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(Abr 2025 – Jun 2026)</span></div>
-        <p class="client-desc">Diseño del modelo integral de revenue management: pricing dinámico, segmentación por función y monetización de zonas premium. Los ingresos crecieron 3.5% anual pese a una reducción en ocupación, con infraestructura analítica propia —integración con la API de Ticketmaster, cubos OLAP y modelo estrella en Power BI— y el primer sistema de reportes comerciales de la compañía.</p>
-        </div>
-      </div>
-      <div class="client-card">
-        <div class="client-logo-wrap" style="padding:2px;"><img src="Imagenes/universidad politecnica logo.png" alt="Universidad Politécnica del Perú" style="transform:scale(1.2);"></div>
-        <div>
-        <div class="client-name">Universidad Politécnica del Perú</div>
-        <div class="client-cat">Big Data & Analytics <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(Jun – Nov 2025)</span></div>
-        <p class="client-desc">Limpieza y estructuración de data para estudios de mercado institucionales, diseño del modelo de planeamiento de metas comerciales y mapeo de procesos para la implementación del CRM, incluyendo un modelo de priorización de leads por semaforización.</p>
-        </div>
-      </div>
-      <div class="client-card">
-        <div class="client-logo-wrap"><img src="Imagenes/inversiones el pino sin marco.jpg" alt="Inversiones el Pino"></div>
-        <div>
-        <div class="client-name">Inversiones el Pino</div>
-        <div class="client-cat">Transformación Digital <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2025)</span></div>
-        <p class="client-desc">Planificación del desarrollo de una intranet de gestión de contratos: levantamiento de requerimientos, diseño de arquitectura y hoja de ruta de implementación.</p>
-        </div>
-      </div>
-      <div class="client-card">
-        <div class="client-logo-wrap"><img src="Imagenes/logo rico final.png" alt="Rico Alimentos"></div>
-        <div>
-        <div class="client-name">Rico Alimentos</div>
-        <div class="client-cat">Planificación Comercial <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2021)</span></div>
-        <p class="client-desc">Elaboración del plan de ventas 2021 para Lima: proyección por canal, definición de cuotas por zona y estructura de seguimiento para la fuerza comercial.</p>
-        </div>
-      </div>
-      <div class="client-card">
-        <div class="client-logo-wrap"><img src="Imagenes/chio lecca logo.png" alt="Chio Lecca" style="transform:scale(0.85);"></div>
-        <div>
-        <div class="client-name">Chio Lecca</div>
-        <div class="client-cat">Transformación Digital <span style="color:var(--blue);font-weight:500;text-transform:none;letter-spacing:normal;">(2026 – Actualidad)</span></div>
-        <p class="client-desc">Plataforma de gestión (Next.js + Supabase) con solucionador de asignación de aulas, BI contable-financiero que cuadra la cobranza mensual y modelo predictivo de deserción; en paralelo dicto el programa de Metodologías Ágiles e IA.</p>
-        </div>
+        <div><div class="cert-title"><span data-l="es">Lean Startup: desarrolla tu modelo de negocio</span><span data-l="en">Lean Startup: develop your business model</span></div><div class="cert-issuer">U. Alicante · UNIMOOC · 2017</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="proyectos">
-  <div class="container">
-    <div class="section-label">05 · Proyectos de desarrollo</div>
-    <h2 class="section-title">Sistemas que construyo</h2>
-    <div class="venture-card">
-      <div class="venture-header">
-        <div class="venture-logo-wrap"><img src="Imagenes/Swiss Holdong Logo.jpg" alt="Swiss Holding AG"></div>
-        <div>
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-            <div class="venture-name">Portal B2B de cotizaciones</div>
-          </div>
-          <div class="venture-tag" style="margin-bottom:8px;">Swiss Holding AG · en salida a producción</div>
-          <p class="venture-desc">Portal para la red de dealers con catálogo de más de 8 mil ofertas de dos empresas, carrito y pedidos. El motor de precios vive en funciones de la base y el pedido se recotiza en el servidor; conector al ERP programado y 49 acciones de servidor con control por rol.</p>
-          <div class="venture-highlights stack" style="margin-top:12px;"><div class="venture-highlight">Next.js 16</div><div class="venture-highlight">React 19</div><div class="venture-highlight">TypeScript</div><div class="venture-highlight">PostgreSQL · Supabase</div><div class="venture-highlight">Zod · Vitest</div><div class="venture-highlight">GitHub Actions · Vercel</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="venture-card">
-      <div class="venture-header">
-        <div class="venture-logo-wrap"><img src="Imagenes/agencia gato logo.jpg" alt="Grupo Gato"></div>
-        <div>
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-            <div class="venture-name">ERP interno multiempresa</div>
-          </div>
-          <div class="venture-tag" style="margin-bottom:8px;">Grupo Gato · en producción</div>
-          <p class="venture-desc">Desarrollado como único desarrollador con agentes de IA: CRM, proyectos, cobranzas, RR. HH. con contratos y firma, y propuestas comerciales en PDF. Migración de PEN 1.7 M en cobranzas históricas conciliadas al céntimo; pruebas automatizadas en cada push.</p>
-          <div class="venture-highlights stack" style="margin-top:12px;"><div class="venture-highlight">Next.js</div><div class="venture-highlight">TypeScript</div><div class="venture-highlight">Supabase</div><div class="venture-highlight">shadcn/ui</div><div class="venture-highlight">Playwright · Vitest</div><div class="venture-highlight">GitHub Actions · Vercel</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="venture-card">
-      <div class="venture-header">
-        <div class="venture-logo-wrap" style="border:2px solid var(--blue);padding:6px;"><img src="Imagenes/contigo logo.svg" alt="Contigo ERP"></div>
-        <div>
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-            <div class="venture-name">Contigo ERP</div>
-            <a href="https://contigo.com.pe/" target="_blank" class="venture-link">Visitar sitio →</a>
-          </div>
-          <div class="venture-tag" style="margin-bottom:8px;">ERP SaaS para pymes con integración SUNAT · toma del desarrollo y la operación</div>
-          <p class="venture-desc">Restablecimos la sincronización de comprobantes con SUNAT (SIRE) y recuperamos dos meses de datos de 8 empresas sin duplicados; servicios internos asegurados detrás del proxy HTTPS, acceso por llaves SSH y cola de correos contenida sin pérdida de datos.</p>
-          <div class="venture-highlights stack" style="margin-top:12px;"><div class="venture-highlight">Angular</div><div class="venture-highlight">Java · Spring Boot</div><div class="venture-highlight">Laravel</div><div class="venture-highlight">FastAPI</div><div class="venture-highlight">PostgreSQL · MySQL · Redis</div><div class="venture-highlight">Docker · Jenkins</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="venture-card">
-      <div class="venture-header">
-        <div class="venture-logo-wrap"><img src="Imagenes/chio lecca logo.png" alt="Chio Lecca Fashion School"></div>
-        <div>
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-            <div class="venture-name">Plataforma de gestión académica</div>
-          </div>
-          <div class="venture-tag" style="margin-bottom:8px;">Chio Lecca Fashion School · 2026 – actualidad</div>
-          <p class="venture-desc">Horarios, proyectos y administración de la escuela, con un solucionador de asignación de aulas por programación con restricciones; BI contable-financiero y modelo predictivo de deserción estudiantil.</p>
-          <div class="venture-highlights stack" style="margin-top:12px;"><div class="venture-highlight">Next.js</div><div class="venture-highlight">TypeScript</div><div class="venture-highlight">Supabase</div><div class="venture-highlight">Python · OR-Tools</div><div class="venture-highlight">Vercel</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="venture-card">
-      <div class="venture-header">
-        <div class="venture-logo-wrap"><img src="Imagenes/Swiss Holdong Logo.jpg" alt="Swiss Holding AG"></div>
-        <div>
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-            <div class="venture-name">Suite de aplicaciones internas</div>
-          </div>
-          <div class="venture-tag" style="margin-bottom:8px;">Swiss Holding AG · Google Apps Script</div>
-          <p class="venture-desc">Portal BI de 15 módulos con permisos por módulo y filtro por fila, CRM web sincronizado con Google Calendar, ETL que consolida el ERP de 3 empresas, motor de comisiones multientidad y tracker de capacitación sobre BigQuery, con inicio de sesión único entre apps.</p>
-          <div class="venture-highlights stack" style="margin-top:12px;"><div class="venture-highlight">Google Apps Script</div><div class="venture-highlight">BigQuery</div><div class="venture-highlight">Meta Graph API</div><div class="venture-highlight">GA4 Data API</div><div class="venture-highlight">Chart.js</div></div>
-        </div>
-      </div>
-    </div>
-    <div class="venture-card">
-      <div class="venture-header">
-        <div class="venture-logo-wrap"><img src="Imagenes/gador logo.jpg" alt="Gador Perú"></div>
-        <div>
-          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-            <div class="venture-name">Automatización comercial con agentes de IA</div>
-          </div>
-          <div class="venture-tag" style="margin-bottom:8px;">Gador Perú · 2026 – actualidad</div>
-          <p class="venture-desc">Agentes reutilizables para la carga y homologación mensual de sell in, sell out y cobranzas de dos unidades de negocio, con conciliación exacta contra las fuentes.</p>
-          <div class="venture-highlights stack" style="margin-top:12px;"><div class="venture-highlight">Google Apps Script</div><div class="venture-highlight">Google Workspace</div><div class="venture-highlight">Agentes de IA</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- 06 · DOCENCIA -->
 <section class="section" id="docencia">
   <div class="container">
-    <div class="section-label">06 · Docencia & Facilitación</div>
-    <h2 class="section-title">Programas universitarios y ecosistemas</h2>
+    <div class="section-label"><span data-l="es">06 · Docencia y facilitación</span><span data-l="en">06 · Teaching &amp; facilitation</span></div>
+    <h2 class="section-title"><span data-l="es">Programas universitarios y ecosistemas de innovación</span><span data-l="en">University programs and innovation ecosystems</span></h2>
     <div class="teach-grid">
       <div class="teach-card">
         <div class="teach-logo-wrap" style="background:none;padding:0;"><img src="Imagenes/idealab logo.jpg" alt="IdeaLab"></div>
-        <div><div class="teach-name">IdeaLab Innovation Hub</div><div class="teach-inst">ProInnóvate · Cusco</div><div class="teach-spec">Facilitador en Aceleración e Incubación</div></div>
+        <div><div class="teach-name">IdeaLab Innovation Hub</div><div class="teach-inst">ProInnóvate · Cusco</div><div class="teach-spec"><span data-l="es">Facilitador en aceleración e incubación</span><span data-l="en">Acceleration and incubation facilitator</span></div></div>
       </div>
       <div class="teach-card">
         <div class="teach-logo-wrap"><img src="Imagenes/utp.jpg" alt="UTP"></div>
-        <div><div class="teach-name">StartUTP</div><div class="teach-inst">Universidad Tecnológica del Perú</div><div class="teach-spec">Scrum · Scope Canvas · Validación</div></div>
+        <div><div class="teach-name">StartUTP</div><div class="teach-inst">Universidad Tecnológica del Perú</div><div class="teach-spec"><span data-l="es">Scrum · Scope Canvas · Validación</span><span data-l="en">Scrum · Scope Canvas · Validation</span></div></div>
       </div>
       <div class="teach-card">
         <div class="teach-logo-wrap"><img src="Imagenes/innova u lima logo.png" alt="Innova ULima"></div>
-        <div><div class="teach-name">Innova ULima</div><div class="teach-inst">Universidad de Lima</div><div class="teach-spec">Design Thinking · Innovación</div></div>
+        <div><div class="teach-name">Innova ULima</div><div class="teach-inst">Universidad de Lima</div><div class="teach-spec"><span data-l="es">Design Thinking · Innovación</span><span data-l="en">Design Thinking · Innovation</span></div></div>
       </div>
       <div class="teach-card">
         <div class="teach-logo-wrap"><img src="Imagenes/hult prize logo.png" alt="Hult Prize"></div>
-        <div><div class="teach-name">Hult Prize</div><div class="teach-inst">Universidad Privada del Norte</div><div class="teach-spec">Emprendimiento social · Pitching</div></div>
+        <div><div class="teach-name">Hult Prize</div><div class="teach-inst">Universidad Privada del Norte</div><div class="teach-spec"><span data-l="es">Emprendimiento social · Pitching</span><span data-l="en">Social entrepreneurship · Pitching</span></div></div>
       </div>
       <div class="teach-card">
         <div class="teach-logo-wrap"><img src="Imagenes/wichay continental logo.png" alt="Universidad Continental" style="transform:scale(1.3);"></div>
-        <div><div class="teach-name">Wichay</div><div class="teach-inst">Universidad Continental</div><div class="teach-spec">Estrategia Comercial · Go-to-Market</div></div>
+        <div><div class="teach-name">Wichay</div><div class="teach-inst">Universidad Continental</div><div class="teach-spec"><span data-l="es">Estrategia comercial · Salida al mercado</span><span data-l="en">Commercial strategy · Go-to-market</span></div></div>
       </div>
       <div class="teach-card">
         <div class="teach-logo-wrap"><img src="Imagenes/chio lecca logo.png" alt="Chio Lecca"></div>
-        <div><div class="teach-name">Chio Lecca</div><div class="teach-inst">Escuela de Moda y Diseño</div><div class="teach-spec">IA Aplicada</div></div>
+        <div><div class="teach-name">Chio Lecca</div><div class="teach-inst"><span data-l="es">Escuela de Moda y Diseño</span><span data-l="en">Fashion and Design School</span></div><div class="teach-spec"><span data-l="es">Metodologías ágiles e IA</span><span data-l="en">Agile methodologies and AI</span></div></div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="servicios">
+<!-- CONTACTO -->
+<section class="section" id="contacto">
   <div class="container">
-    <div class="section-label">07 · Áreas de Especialización</div>
-    <h2 class="section-title">¿Cómo puedo generar valor?</h2>
-    <p style="font-size:14px;color:var(--mut);margin-bottom:24px;text-align:justify;">Cada organización enfrenta desafíos distintos. Mi trabajo consiste en conectar estrategia, datos, inteligencia artificial y tecnología para diseñar soluciones que impulsen el crecimiento, mejoren la toma de decisiones y generen resultados medibles.</p>
-    <div class="svc-grid">
-      <div class="svc-card pale">
-        <div class="svc-header"><span class="svc-num">01</span><span class="svc-title">Business Strategy & Growth</span></div>
-        <p class="svc-desc">Diseño estrategias de negocio orientadas al crecimiento sostenible, alineando objetivos, procesos, personas y tecnología para fortalecer la competitividad y acelerar la ejecución.</p>
-        <div class="svc-tags"><span class="svc-tag">Business Strategy</span><span class="svc-tag">Growth Strategy</span><span class="svc-tag">Business Model</span><span class="svc-tag">Product Strategy</span><span class="svc-tag">OKRs</span></div>
-      </div>
-      <div class="svc-card pale">
-        <div class="svc-header"><span class="svc-num">02</span><span class="svc-title">Business Intelligence & Analytics</span></div>
-        <p class="svc-desc">Transformo datos en información estratégica mediante dashboards ejecutivos, modelos analíticos e integración de múltiples fuentes para acelerar la toma de decisiones.</p>
-        <div class="svc-tags"><span class="svc-tag">Power BI</span><span class="svc-tag">BigQuery</span><span class="svc-tag">SQL</span><span class="svc-tag">Analytics</span><span class="svc-tag">Dashboards</span></div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-header"><span class="svc-num">03</span><span class="svc-title">Revenue Management & Pricing</span></div>
-        <p class="svc-desc">Diseño estrategias de pricing, gestión de ingresos y modelos de demanda basados en datos para maximizar rentabilidad, optimizar el desempeño comercial y mejorar la asignación de recursos.</p>
-        <div class="svc-tags"><span class="svc-tag">Revenue Management</span><span class="svc-tag">Pricing</span><span class="svc-tag">Forecasting</span><span class="svc-tag">Elasticidad</span><span class="svc-tag">Ocupabilidad</span></div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-header"><span class="svc-num">04</span><span class="svc-title">Inteligencia Artificial & Automatización</span></div>
-        <p class="svc-desc">Implemento soluciones basadas en inteligencia artificial para automatizar procesos, desarrollar asistentes inteligentes e integrar modelos de lenguaje en operaciones reales de negocio.</p>
-        <div class="svc-tags"><span class="svc-tag">IA Generativa</span><span class="svc-tag">Agentes IA</span><span class="svc-tag">LLMs</span><span class="svc-tag">Automatización</span><span class="svc-tag">Copilots</span></div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-header"><span class="svc-num">05</span><span class="svc-title">Transformación Digital</span></div>
-        <p class="svc-desc">Lidero iniciativas de transformación digital mediante la optimización de procesos, integración de plataformas e implementación de soluciones tecnológicas con impacto medible.</p>
-        <div class="svc-tags"><span class="svc-tag">Procesos</span><span class="svc-tag">Integraciones</span><span class="svc-tag">Apps Script</span><span class="svc-tag">Power Platform</span><span class="svc-tag">Digitalización</span></div>
-      </div>
-      <div class="svc-card">
-        <div class="svc-header"><span class="svc-num">06</span><span class="svc-title">Innovación, Startups & Docencia</span></div>
-        <p class="svc-desc">Acompaño organizaciones, universidades y startups en el diseño de nuevos productos, modelos de negocio y programas de innovación, complementando esta experiencia como mentor y docente.</p>
-        <div class="svc-tags"><span class="svc-tag">Lean Startup</span><span class="svc-tag">Scrum</span><span class="svc-tag">Mentoría</span><span class="svc-tag">Workshops</span><span class="svc-tag">Product Discovery</span></div>
-      </div>
-    </div>
     <div class="cta-block">
-      <div class="cta-title">¿Tienes un proyecto en mente?</div>
-      <div class="cta-sub">El primer paso es una conversación de 30 minutos para entender el contexto antes de hablar de soluciones.</div>
+      <div class="cta-title"><span data-l="es">¿Conversamos?</span><span data-l="en">Let's talk</span></div>
+      <div class="cta-sub"><span data-l="es">Disponible para roles remotos o híbridos en Latinoamérica y España, y para proyectos de consultoría. Una conversación de 30 minutos basta para entender el contexto.</span><span data-l="en">Available for remote or hybrid roles in Latin America and Spain, and for consulting projects. A 30-minute conversation is enough to understand the context.</span></div>
       <div class="cta-buttons">
-        <a href="https://wa.me/51980005257" target="_blank" class="btn-coral">Escribir por WhatsApp</a>
-        <a href="https://calendly.com/martin-jar-est/30min" target="_blank" class="btn-outline">Agendar 30 minutos</a>
+        <a href="https://wa.me/51980005257" target="_blank" class="btn-coral"><span data-l="es">Escribir por WhatsApp</span><span data-l="en">Message on WhatsApp</span></a>
+        <a href="https://calendly.com/martin-jar-est/30min" target="_blank" class="btn-outline"><span data-l="es">Agendar 30 minutos</span><span data-l="en">Book 30 minutes</span></a>
+        <a href="mailto:martin.jar.est@gmail.com" class="btn-outline"><span data-l="es">Enviar un correo</span><span data-l="en">Send an email</span></a>
       </div>
-    </div>
-  </div>
-</section>
-<section class="section" id="portafolio">
-  <div class="container">
-    <div class="section-label">08 · Proyecto Open Data</div>
-    <h2 class="section-title">Educación superior en cifras</h2>
-    <div class="dash-block">
-      <p class="dash-desc">Dashboard público de datos de educación superior en el Perú, construido sobre 3.7 millones de registros de ingresantes (2022–2025) de fuentes abiertas de SUNEDU y MINEDU. Incluye evolución anual, comparación pública/privada, segmentación por género y categoría, rankings de carreras y universidades, y proyecciones 2026 con regresión lineal.</p>
-      <div class="dash-imgs">
-        <img src="Imagenes/Dashboard 1.png" alt="Dashboard Educación Perú BI — vista 1" onclick="openLightbox(this.src)">
-        <img src="Imagenes/Dashboard 2.png" alt="Dashboard Educación Perú BI — vista 2" onclick="openLightbox(this.src)">
-      </div>
-      <div class="dash-tags">
-        <span class="svc-tag">BigQuery</span><span class="svc-tag">Google Apps Script</span><span class="svc-tag">Chart.js</span><span class="svc-tag">Datos abiertos SUNEDU/MINEDU</span>
-      </div>
-      <a href="https://script.google.com/macros/s/AKfycbz4XL6-eVPFl9hpVCQW9BAY1IKWmimh3RGj-xOtRRCoBFw6HwN25DZdUpHEsZzzQ4sw/exec" target="_blank" class="btn-coral" style="display:inline-block;">Ver dashboard en vivo →</a>
-    </div>
-
-    <div class="section-label" style="margin-top:8px;">Proyecto en Power Apps + Power Automate</div>
-    <h3 style="font-size:20px;font-weight:700;color:var(--navy);margin-bottom:10px;">Portal del Colaborador — Gato</h3>
-    <p class="dash-desc">Aplicación interna desarrollada en Power Apps para la gestión de beneficios, vacaciones, cumpleaños y documentos del colaborador. Flujos de aprobación automatizados en Power Automate con notificaciones por correo y actualización de registros en tiempo real. Implementado en producción en el tenant corporativo de Gato.</p>
-    <div class="dash-imgs">
-      <img src="Imagenes/Power apps.png" alt="Portal del Colaborador — editor Power Apps" onclick="openLightbox(this.src)">
-      <img src="Imagenes/power automate.png" alt="Portal del Colaborador — flujo Power Automate" onclick="openLightbox(this.src)">
-    </div>
-    <div class="dash-tags">
-      <span class="svc-tag">Power Apps</span><span class="svc-tag">Power Automate</span><span class="svc-tag">SharePoint</span><span class="svc-tag">Microsoft 365</span>
     </div>
   </div>
 </section>
@@ -890,18 +924,19 @@ footer::before{content:'';position:absolute;top:-70px;right:10%;width:240px;heig
     <div>
       <div class="footer-accent" style="width:32px;height:4px;background:var(--coral);border-radius:2px;margin-bottom:10px;"></div>
       <div class="footer-name">Martín Jara</div>
-      <div class="footer-sub">Data · BI · IA aplicada · Desarrollo full stack · Remoto o híbrido</div>
+      <div class="footer-sub"><span data-l="es">Data · BI · IA aplicada · Desarrollo full stack · Remoto o híbrido</span><span data-l="en">Data · BI · Applied AI · Full-stack development · Remote or hybrid</span></div>
     </div>
     <div class="footer-contact">
-      <div><a href="mailto:martin.jar.est@gmail.com" target="_blank">martin.jar.est@gmail.com <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align:middle;margin-left:2px;"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></a></div>
-      <div><a href="https://linkedin.com/in/martin-jara-est" target="_blank">linkedin.com/in/martin-jara-est <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-left:2px;"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.3 6.5a1.78 1.78 0 0 1-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.66.66 0 0 0 0 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 0 1 2.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg></a></div>
-      <div>Lima, Perú · 2026</div>
+      <div><a href="mailto:martin.jar.est@gmail.com" target="_blank">martin.jar.est@gmail.com</a></div>
+      <div><a href="https://linkedin.com/in/martin-jara-est" target="_blank">linkedin.com/in/martin-jara-est</a></div>
+      <div><a href="https://github.com/MartinJaes" target="_blank">github.com/MartinJaes</a></div>
+      <div><span data-l="es">Lima, Perú · 2026</span><span data-l="en">Lima, Peru · 2026</span></div>
     </div>
   </div>
 </footer>
 <div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
   <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
-  <img id="lightboxImg" src="" onclick="event.stopPropagation()">
+  <img id="lightboxImg" src="" alt="" onclick="event.stopPropagation()">
 </div>
 <script>
 function openLightbox(src) {
@@ -932,6 +967,36 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { rootMargin: '-100px 0px -60% 0px' });
 sections.forEach(section => observer.observe(section));
+
+/* Idioma / Language */
+const I18N_META = {
+  es: {
+    title: 'Martín Jara — Data, BI e IA aplicada · Desarrollo full stack | Lima, Perú',
+    desc: 'Data, inteligencia de negocios e IA aplicada. Construyo sistemas de BI, automatizaciones y plataformas en producción con Next.js, Supabase, Apps Script y BigQuery. Lima, Perú · remoto o híbrido.'
+  },
+  en: {
+    title: 'Martín Jara — Data, BI & Applied AI · Full-stack development | Lima, Peru',
+    desc: 'Data, business intelligence and applied AI. I build BI systems, automations and production platforms with Next.js, Supabase, Apps Script and BigQuery. Lima, Peru · remote or hybrid.'
+  }
+};
+function setLang(lang, persist) {
+  if (lang !== 'es' && lang !== 'en') lang = 'es';
+  document.documentElement.lang = lang;
+  document.title = I18N_META[lang].title;
+  const md = document.querySelector('meta[name="description"]');
+  if (md) md.setAttribute('content', I18N_META[lang].desc);
+  document.querySelectorAll('.lang-switch button').forEach(b => b.setAttribute('aria-pressed', b.dataset.set === lang ? 'true' : 'false'));
+  if (persist) {
+    try { localStorage.setItem('lang', lang); } catch (e) {}
+    try {
+      const u = new URL(window.location.href);
+      if (lang === 'en') u.searchParams.set('lang', 'en'); else u.searchParams.delete('lang');
+      history.replaceState(null, '', u);
+    } catch (e) {}
+  }
+}
+document.querySelectorAll('.lang-switch button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.set, true)));
+setLang(document.documentElement.lang, false);
 </script>
 </body>
 </html>
