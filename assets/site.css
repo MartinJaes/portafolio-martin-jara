@@ -444,3 +444,10 @@ html[lang="es"] .lang-switch button[data-set="es"],html[lang="en"] .lang-switch 
 .hero::before,.hero::after{z-index:0;}
 @media (max-width:680px){.hero-aurora span{filter:blur(50px);}.hero-aurora .b1{width:320px;height:320px;}.hero-aurora .b2{width:300px;height:300px;}.hero-aurora .b3{width:360px;height:360px;}}
 @media (prefers-reduced-motion:reduce){.hero-aurora span{animation:none;}}
+/* Diseño y desarrollo web */
+.wcard{padding:16px;}
+.wcard-shot{position:relative;margin-bottom:6px;}
+.wcard-desk{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:8px;border:1px solid var(--bdr);cursor:zoom-in;}
+.wcard-mob{position:absolute;right:10px;bottom:-10px;width:22%;height:auto;aspect-ratio:9/16;object-fit:cover;object-position:top;border-radius:8px;border:3px solid #fff;box-shadow:0 6px 18px rgba(13,43,94,.25);}
+.wcard-status{position:absolute;left:10px;bottom:10px;background:var(--navy);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:10px;}
+.wcard-role{font-size:12px;font-weight:600;color:var(--navy);}
